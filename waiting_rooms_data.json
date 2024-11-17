@@ -63,5 +63,19 @@
             "orientationName": "horizontal",
             "service": []
         }
+    },
+    "": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal",
+            "service": ""
+        }
+    },
+    "LAN1-KLIN": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal",
+            "service": ""
+        }
     }
 }

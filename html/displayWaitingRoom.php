@@ -22,7 +22,7 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
     <!-- Content of the page -->
     <div id="app" class="content-container">
         <div class="header" class="row">
-            <div class="label">{{ currentLabel }}{{waitingRoomNameFR}}</div>
+            <div class="label">{{ currentLabel }}</div>
             <!-- Page number -->
             <div class="page-number" v-if="sectionArr.length > 0">{{currentPage}}/{{sectionArr.length}}</div>
         </div>
