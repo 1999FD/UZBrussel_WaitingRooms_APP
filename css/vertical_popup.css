@@ -1,0 +1,97 @@
+.new-ticket-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2); /* Enlarge the popup */
+    z-index: 100; /* High z-index to ensure it's above other content */
+    background-color: white;
+    border-radius: 10px; /* Same rounded corners as the ticket layout */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); /* Consistent shadow */
+    text-align: center;
+    padding: 1rem; /* Padding adjusted for scale */
+    animation: fadeInOut 5s;
+}
+
+/* Mirror the layout of the .ticket-section and .station-section from the standard display */
+.popup-ticket-section,
+.popup-station-section {
+    /* Use the same styling as .ticket-section and .station-section for consistency */
+    text-align: center;
+    display: inline-block; /* Keep inline for side-by-side layout */
+    /* background-color: #ececec; Same background as the label */
+    border-radius: 4px;
+    padding: 5px 10px; /* Padding adjusted for scale */
+    font-weight: bold;
+    margin-bottom: 5px; /* Space between label and value */
+}
+
+.popup-ticket-section{
+    margin-right: 10px;
+}
+
+.popup-label {
+    /* background-color: #ececec; */
+    border-radius: 4px;
+    /* font-weight: bold; */
+    font-size: 3.2rem;
+    text-align: center;
+    color: #454739;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.popup-value {
+    /* Use the same styling as .value for consistency */
+    /* border: 2px solid #4e5a46; */
+    border-radius: 4px;
+    display: inline-block; /* Keep inline for side-by-side layout */
+    width: 150px; /* Width adjusted for scale */
+    font-size: 5.5rem;
+    color: #bbbe00;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+/* Fade-in keyframes */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Fade-out keyframes */
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Active class styles for the popup */
+.new-ticket-popup.active, .overlay.active {
+    visibility: visible;
+    animation: fadeIn 1s forwards; /* Animation for fade-in */
+    transition-delay: 0s; /* No delay to become visible */
+}
+
+/* Fade-out class styles for the popup */
+.new-ticket-popup.fade-out, .overlay.fade-out {
+    animation: fadeOut 1s forwards; /* Animation for fade-out */
+    transition-delay: 0s; /* No delay to hide */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: 99; /* Right behind the popup */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.popup-arrow {
+    font-size: 6em ;
+    margin: 0 ;
+    color: #454739;
+    transform: scaleX(1);
+}

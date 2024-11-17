@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <title>Admin</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/login.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Reem%20Kufi' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src="../js/jwt.js"></script>
+    <script src="../js/admin.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <form>
+        <div class ="seperated">
+        <input type="text" name="gebruikersnaam" placeholder="Username" class="textInput" id="gebruikersnaam" required>
+        <input type="password" name="wachtwoord" placeholder="Password" class="textInput" id="wachtwoord" required>
+        </div>
+        <input type="submit" class="btn-primary" value="Login">
+    </form>
+    <p>© 2024 - UZBrussel</p>
+</div>
+<script>
+    document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    let gebruikersnaam = document.getElementById('gebruikersnaam').value;
+    let wachtwoord = document.getElementById('wachtwoord').value;
+
+    // Create an object to send to the server
+    let data = {
+        gebruikersnaam: gebruikersnaam,
+        wachtwoord: wachtwoord
+    };
+
+    // Make a POST request to login
+    fetch('../php/login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(async (resp) => {
+        const response = await resp.json();
+        // Handle the response from the server
+        if (response.ok) {  
+            login(response.username, response.password, response.secret)
+            window.location.href = './admin';
+        } else {
+            // If login failed, display an error message
+            alert('Login failed. Please check your username and password.');
+        }
+    })
+    .catch(error => {
+        // Handle any errors that occur during the fetch operation
+        console.error('Error:', error);
+        alert('An error occurred while trying to log in.');
+    });
+});
+</script>
+</body>
+</html>

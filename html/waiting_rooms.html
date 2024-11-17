@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Waiting Room Displays</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/datatables.css">
+    <link rel="stylesheet" href="../css/waitingroom.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/config.js"></script>
+    <script src="../js/jwt.js"></script>
+    <script src="../js/admin.js"></script>
+    <script src="../js/dataTables.js"></script>
+    <script src="../js/dataTables.cellEdit.js"></script>
+    <script src="../js/xml2json.js"></script>
+    <script>
+        const token = getToken();
+        if(!token) {
+            window.location.href = "./login";
+        }
+        fetch('../php/secret', {
+            headers: {
+                'X-Requested-By': 'qsmldfjkqmslkdjfqskdf'
+            }
+        })
+            .then(response => response.text())  // Assuming the server response is plain text
+            .then(secret => {
+                const decoded = decodeJWT(token, secret);
+                if(!decoded) {
+                    window.location.href = "./login";
+                }
+            })
+            .catch(error => {
+                window.location.href = "./login";
+                console.error('Error fetching data:', error);
+            });
+    </script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="./admin">Admin Dashboard</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <!-- <a class="nav-item nav-link" href="./slides">Slides</a> -->
+                <a class="nav-item nav-link" href="./manage_loketten">Manage Ticket Displays</a>
+                <a class="nav-item nav-link active" href="./manage_loketten">Manage Waiting Room Displays</a>
+            </div>
+        </div>
+    </nav>
+    <div style="width: 85%; margin: 0 auto" class="mt-5">
+        <h2 class="mb-4">Manage Waiting Rooms</h2>
+    </div>
+    <!-- Add dropdown with dummy values -->
+    <div class="dropdown-wrapper">
+        <label for="waiting_room_dropdown">Choose a waiting room:</label>
+        <select id="waiting_room_dropdown" name="services">
+        </select>
+    </div>
+    <table id="theTable" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Display</th>
+                <th>Display Name</th>
+                <th>Orientation</th>
+                <th>Service</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Display</th>
+                <th>Display Name</th>
+                <th>Orientation</th>
+                <th>Service</th>
+                <th></th>
+            </tr>
+        </tfoot>
+    </table>
+    <div style="width: 85%; margin: 0 auto">
+        <button id="add-row" type="button" class="btn btn-primary" data-toggle="modal" data-target="#addLoketModal">Add Waiting Room</button>
+    </div>
+    <script src="../js/waitingroom.js"></script>
+    
+</body>
+</html>

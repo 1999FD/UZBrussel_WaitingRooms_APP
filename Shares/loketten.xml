@@ -1,0 +1,63 @@
+<TicketQueues>
+    <TicketQueue>
+        <id>1</id>
+        <name>CRAD</name>
+        <service>PNEU</service>
+        <status>UPDATED</status>
+    </TicketQueue>
+    <TicketQueue>
+        <id>2</id>
+        <name>ECMA</name>
+        <service>Radiologie</service>
+    </TicketQueue>
+    <TicketQueue>
+        <id>3</id>
+        <name>CT</name>
+        <service>Radiologie</service>
+    </TicketQueue>
+    <TicketQueue>
+        <id>4</id>
+        <name>MRI</name>
+        <service>Radiologie</service>
+    </TicketQueue>
+    <TicketQueue>
+        <id>5</id>
+        <name>ANCO</name>
+        <service>Radiologie</service>
+    </TicketQueue>
+    <TicketQueue>
+        <id>11</id>
+        <name>UNSCH POLI</name>
+        <service>KIO Poli</service>
+    </TicketQueue>
+    <TicketQueue>
+        <id>12</id>
+        <name>KASSA POLI</name>
+        <service>KIO Poli</service>
+    </TicketQueue>
+    <TicketQueue>
+        <id>13</id>
+        <name>VOOROPNAME POLI</name>
+        <service>KIO Poli</service>
+    </TicketQueue>
+    <TicketQueue>
+        <id>14</id>
+        <name>OPNAME POLI</name>
+        <service>KIO Poli</service>
+    </TicketQueue>
+    <TicketQueue>
+        <id>15</id>
+        <name>INFO POLI</name>
+        <service>KIO Poli</service>
+    </TicketQueue>
+    <TicketQueue>
+        <id>21</id>
+        <name>OPNAME HOSP</name>
+        <service>KIO Hosp</service>
+    </TicketQueue>
+    <TicketQueue>
+        <id>22</id>
+        <name>CONSULTATIE HOSP</name>
+        <service>KIO Hosp</service>
+    </TicketQueue>
+</TicketQueues>

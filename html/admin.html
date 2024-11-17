@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/home.css" />
+    <script src="../js/jwt.js"></script>
+    <script src="../js/admin.js"></script>
+    <title>Admin Dashboard</title>
+    <script>
+        const token = getToken();
+        if(!token) {
+            window.location.href = "./login";
+        }
+        fetch('../php/secret', {
+            headers: {
+                'X-Requested-By': 'qsmldfjkqmslkdjfqskdf'
+            }
+        })
+            .then(response => response.text())  // Assuming the server response is plain text
+            .then(secret => {
+                const decoded = decodeJWT(token, secret);
+                if(!decoded) {
+                    window.location.href = "./login";
+                }
+            })
+            .catch(error => {
+                window.location.href = "./login";
+                console.error('Error fetching data:', error);
+            });
+    </script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="./admin">Admin Dashboard</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <!-- <a class="nav-item nav-link" href="./slides">Slides<span class="sr-only">(current)</span></a> -->
+                <a class="nav-item nav-link" href="./manage_loketten">Manage Ticket Displays</a>
+                <a class="nav-item nav-link" href="./waiting_rooms.html">Manage Waiting Room Displays</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- <div class="tile"><a id="btnAdmin" href="slides">Slides</a></div> -->
+        <div class="tile"><a id="btnAdmin" href="manage_loketten">Ticket Displays</a></div>
+        <div class="tile"><a id="btnAdmin" href="manage_loketten">Waiting Room Displays</a></div>
+    </div>
+</body>
+</html>

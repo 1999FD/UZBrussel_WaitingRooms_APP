@@ -1,0 +1,219 @@
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.green-bar {
+    flex: 0 0 30px; /* Fixed width */
+    height: 100vh;
+    background-color: #bcbe00;
+}
+
+.page-bar {
+    flex: 0 0 30px; /* Fixed width */
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto' !important;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+#app {
+    flex: 1;
+    height: 100%;
+}
+
+.background {
+    width: 1440px !important; /* Fixed width */
+    height: 1080px; /* Take the full height of the viewport */
+}
+
+.label {
+    font-family: 'Roboto';
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* This pushes the page number to the right */
+    background-color: #bcbe00;
+    width: 100%;
+    padding: 10px 55px;
+    box-sizing: border-box;
+}
+
+.subheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* This pushes the page number to the right */
+    background-color: #5e604a;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.page-number {
+    position: absolute;
+    top: 10px; /* Positions the page number near the top */
+    right: 20px; /* Positions the page number close to the right edge */
+    font-size: 3rem; /* Adjust font size as needed */
+    color: white;
+}
+
+
+.content-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.content {
+    width: 100%;
+    height: calc(100vh - 100px); /* Adjust based on header height */
+    display: flex;
+}
+
+.content-left {
+    width: 60%;
+    padding-left: 60px;
+    padding-top: 30px;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+.content-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centres content vertically */
+    align-items: center; /* Centres content horizontally */
+    text-align: center; /* Centres text within each element */
+    box-sizing: border-box; /* Ensures padding does not affect width */
+    height: 100%; /* Takes the full height of the container */
+}
+
+
+
+.date-time {
+    color: #333;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.date-time .time {
+    font-weight: bold;
+    font-size: 9rem;
+}
+
+.date-time .date {
+    text-align: center;
+    font-size: 3.3rem;
+}
+
+.legend {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the entire content horizontally */
+    text-align: left; /* Aligns the text to the left of each icon */
+}
+
+.legend h3 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-align: center; /* Center aligns the heading */
+}
+
+.legend div {
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center; /* Aligns image and text vertically */
+    margin-bottom: 10px; /* Spacing between each row */
+    width: 100%; /* Ensures alignment across the width */
+    justify-content: flex-start;
+}
+
+.icon {
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
+    margin-right: 10px; /* Space between icon and text */
+    vertical-align: middle;
+}
+
+.section {
+    margin-bottom: 30px; /* Space between sections */
+}
+
+.section h2 {
+    font-size: 1.8rem; /* Font size for heading */
+    color: #6f6f53; /* Colour for heading text */
+    margin-bottom: 15px; /* Space below heading */
+    font-weight: normal;
+}
+
+.wait-time {
+    display: flex; /* Makes icon and text align horizontally */
+    align-items: center; /* Aligns icon and text vertically in the center */
+    font-size: 1.2rem; /* Font size for the wait time text */
+    color: #333; /* Text colour */
+}
+
+.unit {
+    font-size: 3rem; /* Font size for unit text */
+}
+
+.section {
+    margin-bottom: 15px;
+}
+
+.section > h2 {
+    font-size: 3.3rem;
+    margin: 0;
+}
+
+.logo {
+    width: 15%;
+    height: auto;
+    position: fixed; /* Stays in place even on scroll */
+    right: 0; /* Aligns to the right edge */
+    bottom: 0; /* Aligns to the bottom edge */
+    margin: 0; /* Remove any margin, as it's no longer needed */
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+

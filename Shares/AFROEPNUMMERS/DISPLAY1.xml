@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<DISPLAY id="1">
+  <fields>
+    <ticket>A0302</ticket>
+    <station-label>9</station-label>
+    <station-position />
+    <service-label>08OPN1</service-label>
+    <lang>en</lang>
+    <visitor-information>Elisabete Veiga Albuquerque</visitor-information>
+    <visitor-identifier />
+    <agent-information>A gva18636</agent-information>
+    <agent-identifier>132</agent-identifier>
+  </fields>
+  <window>
+    <size>NOR</size>
+    <unknown-param-1>3</unknown-param-1>
+  </window>
+</DISPLAY>
+

@@ -1,0 +1,18 @@
+Options -Indexes
+
+RewriteEngine On
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "POST, GET, OPTIONS"
+    Header set Access-Control-Allow-Headers "X-Requested-With, Content-Type"
+</IfModule>
+
+# Rewrite URLs without .html extension to include .html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
+
+# Handle URLs with the /html/ directory structure
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^html/([^/]+)/?$ html/$1.html [L]

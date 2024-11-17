@@ -1,0 +1,67 @@
+{
+    "KAZK-WZ01": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal",
+            "service": [
+                "KPED",
+                "KURO",
+                "KPNE",
+                "KHLK"
+            ]
+        }
+    },
+    "DUMMY-WZ": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal",
+            "service": [
+                "KPED",
+                "KURO",
+                "KORT"
+            ]
+        }
+    },
+    "A757-WZ01": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal",
+            "service": ""
+        }
+    },
+    "CHVZ-WZ01": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal",
+            "service": ""
+        }
+    },
+    "CONR-WZ01": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal",
+            "service": ""
+        }
+    },
+    "CRG-WZ01": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal",
+            "service": ""
+        }
+    },
+    "CRG-WZ02": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal",
+            "service": ""
+        }
+    },
+    "LAN1-GER": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal",
+            "service": []
+        }
+    }
+}

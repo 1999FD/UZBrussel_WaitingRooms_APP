@@ -1,0 +1,110 @@
+:root {
+    --main-color: #FFFFFF;
+    --secondary-color: #E3E3E3;
+    --accent-color: #BCBE00;
+    --text-color: #000000;
+}
+
+html {
+    color: var(--text-color);
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 0;
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    /* If you want to limit the width of the container, you can uncomment the next line */
+    /* max-width: 800px; */
+}
+.tile {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+.btn-uzb {
+    color: #FFFFFF;
+    background-color: #BCBE00;
+    border-color: #A8AB00;
+}
+
+    .btn-uzb:hover,
+    .btn-uzb:focus,
+    .btn-uzb:active,
+    .btn-uzb.active,
+    .open .dropdown-toggle.btn-uzb {
+        color: #FFFFFF;
+        background-color: #A0A300;
+        border-color: #A8AB00;
+    }
+
+    .btn-uzb:active,
+    .btn-uzb.active,
+    .open .dropdown-toggle.btn-uzb {
+        background-image: none;
+    }
+
+    .btn-uzb.disabled,
+    .btn-uzb[disabled],
+    fieldset[disabled] .btn-uzb,
+    .btn-uzb.disabled:hover,
+    .btn-uzb[disabled]:hover,
+    fieldset[disabled] .btn-uzb:hover,
+    .btn-uzb.disabled:focus,
+    .btn-uzb[disabled]:focus,
+    fieldset[disabled] .btn-uzb:focus,
+    .btn-uzb.disabled:active,
+    .btn-uzb[disabled]:active,
+    fieldset[disabled] .btn-uzb:active,
+    .btn-uzb.disabled.active,
+    .btn-uzb[disabled].active,
+    fieldset[disabled] .btn-uzb.active {
+        background-color: #BCBE00;
+        border-color: #A8AB00;
+    }
+
+    .btn-uzb .badge {
+        color: #BCBE00;
+        background-color: #FFFFFF;
+    }
+
+    #current-appointment-part {
+        margin-bottom: 16px;
+    }

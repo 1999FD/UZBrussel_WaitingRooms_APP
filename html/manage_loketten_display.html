@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Loketten of display</title>
+    <link rel="stylesheet" href="../css/manage_loketten_display.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/config.js"></script>
+    <script src="../js/xml2json.js"></script>
+    <link rel="stylesheet" href="../css/datatables.css">
+    <script src="../js/dataTables.js"></script>
+    <script src="../js/manage_loketten_display.js"></script>
+</head>
+<body>
+    <div class="container">
+        <table id="loketTable">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Loket ID</th>
+                    <th>Loket Name</th>
+                    <th>Service</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+        <button class="confirm-button" id="btnConfirm">Confirm</button>
+    </div>
+    
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
