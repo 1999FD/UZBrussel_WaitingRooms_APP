@@ -1,1 +1,9 @@
-<data><Waitingroom><Id>POL0-WZ03</Id><NameNL>Pneumologie</NameNL><NameFR>Maladies Pulmonaires</NameFR><NameEN>Pneumology</NameEN><Services/></Waitingroom></data>
+<data>
+    <Waitingroom>
+        <Id>POL0-WZ03</Id>
+        <NameNL>Pneumologie</NameNL>
+        <NameFR>Maladies Pulmonaires</NameFR>
+        <NameEN>Pneumology</NameEN>
+        <Services />
+    </Waitingroom>
+</data>
