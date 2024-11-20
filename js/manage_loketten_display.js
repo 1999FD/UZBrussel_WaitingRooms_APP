@@ -46,7 +46,7 @@ $(document).ready(async function() {
 
     try {
         // Fetch the XML file
-        const response = await fetch(`${baseUrl}/Shares/AFROEPNUMMERSACC/TicketQueues.xml?${Date.now()}`);
+        const response = await fetch(`${baseUrl}/Shares/TicketQueues.xml?${Date.now()}`);
         const xmlText = await response.text();
         const parser = new DOMParser();
         const xmlDoc = parser.parseFromString(xmlText, 'text/xml');

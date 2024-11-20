@@ -2,7 +2,7 @@
 header('Content-Type: application/json');
 
 // Define the directory path
-$directoryPath = '../Shares/AFROEPNUMMERS';
+$directoryPath = '../Shares';
 
 // Check if the directory exists
 if (!is_dir($directoryPath)) {

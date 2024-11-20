@@ -140,7 +140,7 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                         })
                         displayInfo.loketIDs.forEach(async loket => {
                             try{
-                                const response = await fetch(`${baseUrl}/Shares/AFROEPNUMMERS/${loket}.xml?${Date.now()}`);
+                                const response = await fetch(`${baseUrl}/Shares/${loket}.xml?${Date.now()}`);
                                 if(response.ok){
                                     const xmlText = await response.text();
                                     const parser = new DOMParser();

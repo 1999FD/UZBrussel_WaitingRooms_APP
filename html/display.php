@@ -141,7 +141,7 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                         displayInfo.loketIDs.forEach(async loket => {
                             try{
                                 // Catch response error if any
-                                const response = await fetch(`${baseUrl}/Shares/AFROEPNUMMERS/${loket}.xml?${Date.now()}`);
+                                const response = await fetch(`${baseUrl}/Shares/${loket}.xml?${Date.now()}`);
                                 
                                 // If no response then return
                                 if(response.ok){

@@ -172,7 +172,7 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                 },
                 async fetchWaitingRoomNamesAndSelectedServices() {
                     try {
-                        const response = await fetch(`${baseUrl}/Shares/AFROEPNUMMERS/Waitingroom_${this.waitingRoomId}.xml?${Date.now()}`);
+                        const response = await fetch(`${baseUrl}/Shares/Waitingroom_${this.waitingRoomId}.xml?${Date.now()}`);
                         const xmlText = await response.text(); // Ensure xmlText is retrieved as a string
                         const parser = new DOMParser();
                         const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
@@ -189,7 +189,7 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                 async fetchXMLData() {
                     try {
                         this.fetchOrientation();
-                        const response = await fetch(`${baseUrl}/Shares/AFROEPNUMMERS/Waitingroom_${this.waitingRoomId}.xml?${Date.now()}`);
+                        const response = await fetch(`${baseUrl}/Shares/Waitingroom_${this.waitingRoomId}.xml?${Date.now()}`);
                         const xmlText = await response.text(); // Ensure xmlText is retrieved as a string
                         const parser = new DOMParser();
                         const xmlDoc = parser.parseFromString(xmlText, 'text/xml');

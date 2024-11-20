@@ -29,7 +29,7 @@ $(document).ready(async function() {
     try {
         // Fetch and parse XML file
         const XMLFileName = `Waitingroom_${waitingRoomId}.xml`;
-        const response = await fetch(`${baseUrl}/Shares/AFROEPNUMMERS/${XMLFileName}?${Date.now()}`);
+        const response = await fetch(`${baseUrl}/Shares/${XMLFileName}?${Date.now()}`);
         const xmlText = await response.text();
         const parser = new DOMParser();
         const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
