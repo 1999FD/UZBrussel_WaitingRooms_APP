@@ -1,1 +1,9 @@
-<data><Waitingroom><Id>ONCO-WZ02</Id><NameNL>Wachtzaal Borstkliniek</NameNL><NameFR>Wachtzaal Borstkliniek</NameFR><NameEN>Wachtzaal Borstkliniek</NameEN><Services/></Waitingroom></data>
+<data>
+    <Waitingroom>
+        <Id>ONCO-WZ02</Id>
+        <NameNL>Wachtzaal Borstkliniek</NameNL>
+        <NameFR>Wachtzaal Borstkliniek</NameFR>
+        <NameEN>Wachtzaal Borstkliniek</NameEN>
+        <Services />
+    </Waitingroom>
+</data>

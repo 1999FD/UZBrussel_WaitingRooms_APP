@@ -1,1 +1,9 @@
-<data><Waitingroom><Id>ONCO-WZ01</Id><NameNL>Oncologie</NameNL><NameFR>Oncologie</NameFR><NameEN>Oncology</NameEN><Services/></Waitingroom></data>
+<data>
+    <Waitingroom>
+        <Id>ONCO-WZ01</Id>
+        <NameNL>Oncologie</NameNL>
+        <NameFR>Oncologie</NameFR>
+        <NameEN>Oncology</NameEN>
+        <Services />
+    </Waitingroom>
+</data>

@@ -1,1 +1,9 @@
-<data><Waitingroom><Id>POL5-WZ01</Id><NameNL>K.N.O.</NameNL><NameFR>O.R.L.</NameFR><NameEN>E.N.T.</NameEN><Services/></Waitingroom></data>
+<data>
+    <Waitingroom>
+        <Id>POL5-WZ01</Id>
+        <NameNL>K.N.O.</NameNL>
+        <NameFR>O.R.L.</NameFR>
+        <NameEN>E.N.T.</NameEN>
+        <Services />
+    </Waitingroom>
+</data>

@@ -1,1 +1,32 @@
-<data><Waitingroom><Id>POL2-WZ01</Id><NameNL>Endocrino / plast. heelk. / dieet</NameNL><NameFR>Endocrino / chir. plast.. / diététiek</NameFR><NameEN>Endocrino / plast. surgery. / diet department</NameEN><Services/></Waitingroom></data>
+<data>
+    <Waitingroom>
+        <Id>POL2-WZ01</Id>
+        <NameNL>Endocrino / plast. heelk. / dieet</NameNL>
+        <NameFR>Endocrino / chir. plast.. / diététiek</NameFR>
+        <NameEN>Endocrino / plast. surgery. / diet department</NameEN>
+        <Services>
+            <Service>
+                <Id>CEND</Id>
+                <NameNL>Endocrinologie</NameNL>
+                <NameFR>Endocrinologie</NameFR>
+                <NameEN>Endrocrinology</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>BAL1</Id>
+                        <NameNL>Dr. Balti</NameNL>
+                        <NameFR>Dr. Balti</NameFR>
+                        <NameEN>Dr. Balti</NameEN>
+                        <WaitTimeInMinutes>14</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>ANC1</Id>
+                        <NameNL>Prof. Dr. Andreescu</NameNL>
+                        <NameFR>Prof. Dr. Andreescu</NameFR>
+                        <NameEN>Prof. Dr. Andreescu</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+        </Services>
+    </Waitingroom>
+</data>

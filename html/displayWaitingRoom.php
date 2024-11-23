@@ -40,7 +40,10 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                                 <img v-if="item.WaitTimeInMinutes <= 20" src="../img/clock-green.png" alt="Green Icon" class="icon" />
                                 <img v-else-if="item.WaitTimeInMinutes > 20 && item.WaitTimeInMinutes <= 40" src="../img/clock-orange.png" alt="Orange Icon" class="icon" />
                                 <img v-else src="../img/clock-red.png" alt="Red Icon" class="icon" />
-                                <span class="unit">{{ trimText(item['Name' + currentLanguage]) }}</span>
+                                <span class="unit">
+                                    <span class="id">{{service.Id}}-{{item.Id}}</span>
+                                    <span class="name">{{ trimText(item['Name' + currentLanguage]) }}</span>
+                                </span>
                             </div>
                         </template>
 
@@ -51,7 +54,10 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                                 <img v-if="unit.WaitTimeInMinutes <= 20" src="../img/clock-green.png" alt="Green Icon" class="icon" />
                                 <img v-else-if="unit.WaitTimeInMinutes > 20 && unit.WaitTimeInMinutes <= 40" src="../img/clock-orange.png" alt="Orange Icon" class="icon" />
                                 <img v-else src="../img/clock-red.png" alt="Red Icon" class="icon" />
-                                <span class="unit">{{ trimText(unit['Name' + currentLanguage]) }}</span>
+                                <span class="unit">
+                                    <span class="id">{{service.Id}}-{{unit.Id}}</span>
+                                    <span class="name">{{ trimText(unit['Name' + currentLanguage]) }}</span>
+                                </span>
                             </div>
                         </template>
                     </div>
@@ -161,9 +167,9 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                         const response = await fetch(`${baseUrl}/waiting_rooms_data.json?${Date.now()}`); // Fetch data.json with timestamp
                         const jsonData = await response.json();
                         const orientation = jsonData[this.waitingRoomId][this.displayId].orientationName;
-                        if(orientation === 'horizontal') {
+                        if (orientation === 'horizontal') {
                             loadCSS(orientation)
-                        }else{
+                        } else {
                             window.location.href = `${baseUrl}/html/displayWaitingRoomVertical?waitingRoomId=${this.waitingRoomId}&displayId=${this.displayId}`;
                         }
                     } catch (error) {
@@ -194,6 +200,7 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                         const parser = new DOMParser();
                         const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
                         const services = this.xmlToJson(xmlDoc).Services;
+                        console.log(services)
                         this.services = services.Service;
                         const response2 = await fetch(`${baseUrl}/waiting_rooms_data.json?${Date.now()}`); // Fetch data.json with timestamp
                         const jsonData = await response2.json();

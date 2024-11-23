@@ -1,1 +1,9 @@
-<data><Waitingroom><Id>MBV-WZ01</Id><NameNL>Nucleaire Geneeskunde</NameNL><NameFR>Médecine Nucléaire</NameFR><NameEN>Nuclear Medicine</NameEN><Services/></Waitingroom></data>
+<data>
+    <Waitingroom>
+        <Id>MBV-WZ01</Id>
+        <NameNL>Nucleaire Geneeskunde</NameNL>
+        <NameFR>Médecine Nucléaire</NameFR>
+        <NameEN>Nuclear Medicine</NameEN>
+        <Services />
+    </Waitingroom>
+</data>

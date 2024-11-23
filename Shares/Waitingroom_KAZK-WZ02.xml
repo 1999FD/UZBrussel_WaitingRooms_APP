@@ -1,1 +1,9 @@
-<data><Waitingroom><Id>KAZK-WZ02</Id><NameNL>Kidz Health Castle</NameNL><NameFR>Kidz Health Castle</NameFR><NameEN>Kidz Health Castle</NameEN><Services/></Waitingroom></data>
+<data>
+    <Waitingroom>
+        <Id>KAZK-WZ02</Id>
+        <NameNL>Kidz Health Castle</NameNL>
+        <NameFR>Kidz Health Castle</NameFR>
+        <NameEN>Kidz Health Castle</NameEN>
+        <Services />
+    </Waitingroom>
+</data>

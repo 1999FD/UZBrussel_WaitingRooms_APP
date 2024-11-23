@@ -1,1 +1,61 @@
-<data><Waitingroom><Id>CRG-WZ01</Id><NameNL>CRG + 1</NameNL><NameFR>CRG + 1</NameFR><NameEN>CRG + 1</NameEN><Services><Service><Id>CFER</Id><NameNL>Brussels IVF</NameNL><NameFR>Brussels IVF</NameFR><NameEN>Brussels IVF</NameEN><Units><Unit><Id>ENBD</Id><NameNL>Bloed</NameNL><NameFR>Bloed</NameFR><NameEN>Bloed</NameEN><WaitTimeInMinutes>733</WaitTimeInMinutes></Unit></Units></Service></Services></Waitingroom></data>
+<data>
+    <Waitingroom>
+        <Id>CRG-WZ01</Id>
+        <NameNL>CRG + 1</NameNL>
+        <NameFR>CRG + 1</NameFR>
+        <NameEN>CRG + 1</NameEN>
+        <Services>
+            <Service>
+                <Id>OBFE</Id>
+                <NameNL>Operatiekwartier Brussels IVF</NameNL>
+                <NameFR>Salle d'opération Brussels IVF</NameFR>
+                <NameEN>Operating theater Brussels IVF</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>CRG4</Id>
+                        <NameNL>Crg Zaal 4 Et</NameNL>
+                        <NameFR>Crg Zaal 4 Et</NameFR>
+                        <NameEN>Crg Zaal 4 Et</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>CRG5</Id>
+                        <NameNL>Crg Zaal 5 Pick-up</NameNL>
+                        <NameFR>Crg Zaal 5 Pick-up</NameFR>
+                        <NameEN>Crg Zaal 5 Pick-up</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>CFER</Id>
+                <NameNL>Brussels IVF</NameNL>
+                <NameFR>Brussels IVF</NameFR>
+                <NameEN>Brussels IVF</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>BLD</Id>
+                        <NameNL>Bloed (dm)</NameNL>
+                        <NameFR>Bloed (dm)</NameFR>
+                        <NameEN>Bloed (dm)</NameEN>
+                        <WaitTimeInMinutes>199</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>INS</Id>
+                        <NameNL>Inseminaties</NameNL>
+                        <NameFR>Inseminaties</NameFR>
+                        <NameEN>Inseminaties</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>ENBD</Id>
+                        <NameNL>Bloed</NameNL>
+                        <NameFR>Bloed</NameFR>
+                        <NameEN>Bloed</NameEN>
+                        <WaitTimeInMinutes>199</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+        </Services>
+    </Waitingroom>
+</data>

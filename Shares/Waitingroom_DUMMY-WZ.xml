@@ -14,7 +14,7 @@
                     <Unit>
                         <Id>MARC</Id>
                         <NameNL>Dr. Johan Marchand/alg. pediatrie</NameNL>
-                        <NameFR>Dr. Johan Marchand/p�diatrie g�nerale</NameFR>
+                        <NameFR>Dr. Johan Marchand/pédiatrie génerale</NameFR>
                         <NameEN>Dr. Johan Marchand/general pediatrics</NameEN>
                         <WaitTimeInMinutes>0</WaitTimeInMinutes>
                     </Unit>
@@ -45,13 +45,13 @@
             <Service>
                 <Id>KORT</Id>
                 <NameNL>Orthopedie kinderen</NameNL>
-                <NameFR>Orthop�die enfants</NameFR>
+                <NameFR>Orthopédie enfants</NameFR>
                 <NameEN>Orthopaedics children</NameEN>
                 <Units>
                     <Unit>
                         <Id>ORT2</Id>
                         <NameNL>Orthopedie 2e Lijst</NameNL>
-                        <NameFR>Orthop�die 2e Liste</NameFR>
+                        <NameFR>Orthopédie 2e Liste</NameFR>
                         <NameEN>Orthopedics 2e List</NameEN>
                         <WaitTimeInMinutes>0</WaitTimeInMinutes>
                     </Unit>

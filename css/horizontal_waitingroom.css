@@ -185,10 +185,6 @@ body {
     color: #333; /* Text colour */
 }
 
-.unit {
-    font-size: 3rem; /* Font size for unit text */
-}
-
 .section {
     margin-bottom: 15px;
 }
@@ -206,6 +202,24 @@ body {
     bottom: 0; /* Aligns to the bottom edge */
     margin: 0; /* Remove any margin, as it's no longer needed */
     display: block;
+}
+
+.unit {
+    display: flex;
+    align-items: baseline; /* Ensure text aligns properly */
+    font-size: 3rem; /* Font size for unit text */
+}
+
+.id {
+    display: inline-block;
+    width: 280px; /* Set a fixed width for the ID part */
+    text-align: left; /* Aligns the ID to the right inside the fixed width */
+}
+
+.name {
+    display: inline-block;
+    text-align: left; /* Ensures the name text aligns to the left */
+    flex-grow: 1; /* Allows it to take up remaining space */
 }
 
 

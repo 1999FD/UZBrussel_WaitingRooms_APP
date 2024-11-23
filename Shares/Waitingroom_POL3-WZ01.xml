@@ -1,1 +1,9 @@
-<data><Waitingroom><Id>POL3-WZ01</Id><NameNL>Wachtzaal Anesthesie</NameNL><NameFR>Wachtzaal Anesthesie</NameFR><NameEN>Wachtzaal Anesthesie</NameEN><Services/></Waitingroom></data>
+<data>
+    <Waitingroom>
+        <Id>POL3-WZ01</Id>
+        <NameNL>Wachtzaal Anesthesie</NameNL>
+        <NameFR>Wachtzaal Anesthesie</NameFR>
+        <NameEN>Wachtzaal Anesthesie</NameEN>
+        <Services />
+    </Waitingroom>
+</data>

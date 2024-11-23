@@ -1,1 +1,9 @@
-<data><Waitingroom><Id>POL1-WZ02</Id><NameNL>Wachtzaal Reumato - Fysische</NameNL><NameFR>Wachtzaal Reumato - Fysische</NameFR><NameEN>Wachtzaal Reumato - Fysische</NameEN><Services/></Waitingroom></data>
+<data>
+    <Waitingroom>
+        <Id>POL1-WZ02</Id>
+        <NameNL>Wachtzaal Reumato - Fysische</NameNL>
+        <NameFR>Wachtzaal Reumato - Fysische</NameFR>
+        <NameEN>Wachtzaal Reumato - Fysische</NameEN>
+        <Services />
+    </Waitingroom>
+</data>

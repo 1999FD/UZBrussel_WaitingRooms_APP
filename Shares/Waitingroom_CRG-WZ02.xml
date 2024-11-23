@@ -1,1 +1,32 @@
-<data><Waitingroom><Id>CRG-WZ02</Id><NameNL>CRG +2</NameNL><NameFR>CRG +2</NameFR><NameEN>CRG +2</NameEN><Services><Service><Id>CFER</Id><NameNL>Brussels IVF</NameNL><NameFR>Brussels IVF</NameFR><NameEN>Brussels IVF</NameEN><Units><Unit><Id>SMAC</Id><NameNL>Prof. Dr. Shari Mackens</NameNL><NameFR>Prof. Dr. Shari Mackens</NameFR><NameEN>Prof. Dr. Shari Mackens</NameEN><WaitTimeInMinutes>26</WaitTimeInMinutes></Unit><Unit><Id>VRIJ</Id><NameNL>Vrije afspraak</NameNL><NameFR>Vrije afspraak</NameFR><NameEN>Vrije afspraak</NameEN><WaitTimeInMinutes>643</WaitTimeInMinutes></Unit></Units></Service></Services></Waitingroom></data>
+<data>
+    <Waitingroom>
+        <Id>CRG-WZ02</Id>
+        <NameNL>CRG +2</NameNL>
+        <NameFR>CRG +2</NameFR>
+        <NameEN>CRG +2</NameEN>
+        <Services>
+            <Service>
+                <Id>CFER</Id>
+                <NameNL>Brussels IVF</NameNL>
+                <NameFR>Brussels IVF</NameFR>
+                <NameEN>Brussels IVF</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>PL8</Id>
+                        <NameNL>Plan donor UZ Brussel</NameNL>
+                        <NameFR>Plan donor UZ Brussel</NameFR>
+                        <NameEN>Plan Donor Uzb</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>PL2</Id>
+                        <NameNL>IVF-ICSI PRIOR 2</NameNL>
+                        <NameFR>IVF-ICSI PRIOR 2</NameFR>
+                        <NameEN>IVF-ICSI PRIOR 2</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+        </Services>
+    </Waitingroom>
+</data>

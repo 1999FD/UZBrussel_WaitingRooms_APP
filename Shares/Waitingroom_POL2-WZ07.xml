@@ -1,1 +1,9 @@
-<data><Waitingroom><Id>POL2-WZ07</Id><NameNL>Drive-in</NameNL><NameFR>Drive-in</NameFR><NameEN>Drive-in</NameEN><Services/></Waitingroom></data>
+<data>
+    <Waitingroom>
+        <Id>POL2-WZ07</Id>
+        <NameNL>Drive-in</NameNL>
+        <NameFR>Drive-in</NameFR>
+        <NameEN>Drive-in</NameEN>
+        <Services />
+    </Waitingroom>
+</data>

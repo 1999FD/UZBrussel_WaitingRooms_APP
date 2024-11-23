@@ -1,1 +1,9 @@
-<data><Waitingroom><Id>POL0-WZ05</Id><NameNL>Endoscopie/Proctologie</NameNL><NameFR>Endoscopie/Proctologie</NameFR><NameEN>Endoscopy/Proctology</NameEN><Services/></Waitingroom></data>
+<data>
+    <Waitingroom>
+        <Id>POL0-WZ05</Id>
+        <NameNL>Endoscopie/Proctologie</NameNL>
+        <NameFR>Endoscopie/Proctologie</NameFR>
+        <NameEN>Endoscopy/Proctology</NameEN>
+        <Services />
+    </Waitingroom>
+</data>

@@ -1,1 +1,96 @@
-<data><Waitingroom><Id>DIAB-WZ01</Id><NameNL>Diabeteskliniek</NameNL><NameFR>Clinique du diabète</NameFR><NameEN>Diabetes clinic</NameEN><Services><Service><Id>CDIA</Id><NameNL>Diabeteskliniek</NameNL><NameFR>Clinique du diabète</NameFR><NameEN>Diabetes centre</NameEN><Units><Unit><Id>JPM1</Id><NameNL>Prof. Dr. J. Pen</NameNL><NameFR>Prof. Dr. J. Pen</NameFR><NameEN>Prof. Dr. J. Pen</NameEN><WaitTimeInMinutes>0</WaitTimeInMinutes></Unit><Unit><Id>JPM2</Id><NameNL>Prof. Dr. J. Pen</NameNL><NameFR>Prof. Dr. J. Pen</NameFR><NameEN>Prof. Dr. J. Pen</NameEN><WaitTimeInMinutes>0</WaitTimeInMinutes></Unit><Unit><Id>MANS</Id><NameNL>dr. D. Michielsen</NameNL><NameFR>dr. D. Michielsen</NameFR><NameEN>Dr. D. Michielsen - Seksualiteit</NameEN><WaitTimeInMinutes>0</WaitTimeInMinutes></Unit><Unit><Id>OOGS</Id><NameNL>Screening Oogfundus</NameNL><NameFR>Screening Oftalmologie</NameFR><NameEN>Screening Oogfundus</NameEN><WaitTimeInMinutes>0</WaitTimeInMinutes></Unit><Unit><Id>BKM1</Id><NameNL>Prof. Dr. B. Keymeulen</NameNL><NameFR>Prof. Dr. B. Keymeulen</NameFR><NameEN>Prof. Dr. B. Keymeulen</NameEN><WaitTimeInMinutes>0</WaitTimeInMinutes></Unit><Unit><Id>BKM2</Id><NameNL>Prof. Dr. B. Keymeulen</NameNL><NameFR>Prof. Dr. B. Keymeulen</NameFR><NameEN>Prof. Dr. B. Keymeulen</NameEN><WaitTimeInMinutes>0</WaitTimeInMinutes></Unit><Unit><Id>BKM3</Id><NameNL>Prof. Dr. B. Keymeulen</NameNL><NameFR>Prof. Dr. B. Keymeulen</NameFR><NameEN>Prof. Dr. B. Keymeulen</NameEN><WaitTimeInMinutes>0</WaitTimeInMinutes></Unit><Unit><Id>ROOK</Id><NameNL>Consultatie rookstop</NameNL><NameFR>Consultation cessation du tabagisme</NameFR><NameEN>Consultatie smoking cessation</NameEN><WaitTimeInMinutes>0</WaitTimeInMinutes></Unit><Unit><Id>PSCH</Id><NameNL>Psycholoog Alex Jacques</NameNL><NameFR>Psychologue Alex Jacques</NameFR><NameEN>Psycholoog Alex Jacques</NameEN><WaitTimeInMinutes>0</WaitTimeInMinutes></Unit></Units></Service></Services></Waitingroom></data>
+<data>
+    <Waitingroom>
+        <Id>DIAB-WZ01</Id>
+        <NameNL>Diabeteskliniek</NameNL>
+        <NameFR>Clinique du diabète</NameFR>
+        <NameEN>Diabetes clinic</NameEN>
+        <Services>
+            <Service>
+                <Id>CEND</Id>
+                <NameNL>Endocrinologie</NameNL>
+                <NameFR>Endocrinologie</NameFR>
+                <NameEN>Endrocrinology</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>BAL1</Id>
+                        <NameNL>Dr. Balti</NameNL>
+                        <NameFR>Dr. Balti</NameFR>
+                        <NameEN>Dr. Balti</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>ANC1</Id>
+                        <NameNL>Prof. Dr. Andreescu</NameNL>
+                        <NameFR>Prof. Dr. Andreescu</NameFR>
+                        <NameEN>Prof. Dr. Andreescu</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>CDIA</Id>
+                <NameNL>Diabeteskliniek</NameNL>
+                <NameFR>Clinique du diabète</NameFR>
+                <NameEN>Diabetes centre</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>JPM1</Id>
+                        <NameNL>Prof. Dr. J. Pen</NameNL>
+                        <NameFR>Prof. Dr. J. Pen</NameFR>
+                        <NameEN>Prof. Dr. J. Pen</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>JPM2</Id>
+                        <NameNL>Prof. Dr. J. Pen</NameNL>
+                        <NameFR>Prof. Dr. J. Pen</NameFR>
+                        <NameEN>Prof. Dr. J. Pen</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>KAM3</Id>
+                        <NameNL>Dr. A. Kharagjitsing</NameNL>
+                        <NameFR>Dr. A. Kharagjitsing</NameFR>
+                        <NameEN>Dr. A. Kharagjitsing</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>KAM2</Id>
+                        <NameNL>Dr. A. Kharagjitsing</NameNL>
+                        <NameFR>Dr. A. Kharagjitsing</NameFR>
+                        <NameEN>Dr. A. Kharagjitsing</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>KAM1</Id>
+                        <NameNL>Dr. A. kharagjitsing</NameNL>
+                        <NameFR>Dr. A. kharagjitsing</NameFR>
+                        <NameEN>Dr. A. kharagjitsing</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>BKM3</Id>
+                        <NameNL>Prof. Dr. B. Keymeulen</NameNL>
+                        <NameFR>Prof. Dr. B. Keymeulen</NameFR>
+                        <NameEN>Prof. Dr. B. Keymeulen</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>BKM4</Id>
+                        <NameNL>Prof. Dr. B. Keymeulen</NameNL>
+                        <NameFR>Prof. Dr. B. Keymeulen</NameFR>
+                        <NameEN>Prof. Dr. B. Keymeulen</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>JPM3</Id>
+                        <NameNL>Prof. Dr. J. Pen</NameNL>
+                        <NameFR>Prof. Dr. J. Pen</NameFR>
+                        <NameEN>Prof. Dr. J. Pen</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+        </Services>
+    </Waitingroom>
+</data>

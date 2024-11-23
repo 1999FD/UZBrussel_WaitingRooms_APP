@@ -1,1 +1,9 @@
-<data><Waitingroom><Id>POL0-WZ04</Id><NameNL>Urologie / Gastro-enterologie / Proctologie</NameNL><NameFR>Urologie / Gastro-entérologie / Proctologie</NameFR><NameEN>Urology / Gastroenterology / Proctology</NameEN><Services/></Waitingroom></data>
+<data>
+    <Waitingroom>
+        <Id>POL0-WZ04</Id>
+        <NameNL>Urologie / Gastro-enterologie / Proctologie</NameNL>
+        <NameFR>Urologie / Gastro-entérologie / Proctologie</NameFR>
+        <NameEN>Urology / Gastroenterology / Proctology</NameEN>
+        <Services />
+    </Waitingroom>
+</data>

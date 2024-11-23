@@ -1,1 +1,9 @@
-<data><Waitingroom><Id>KAZK-WZ03</Id><NameNL>Wachtzaal PAIKA</NameNL><NameFR>Wachtzaal PAIKA</NameFR><NameEN>Wachtzaal PAIKA</NameEN><Services><Service><Id>KPSY</Id><NameNL>Psychiatrie kinderen</NameNL><NameFR>Psychiatrie enfants</NameFR><NameEN>Psychiatry children</NameEN><Units><Unit><Id>EGEU</Id><NameNL>E. Geudens</NameNL><NameFR>E. Geudens</NameFR><NameEN>E. Geudens</NameEN><WaitTimeInMinutes>107</WaitTimeInMinutes></Unit></Units></Service></Services></Waitingroom></data>
+<data>
+    <Waitingroom>
+        <Id>KAZK-WZ03</Id>
+        <NameNL>Wachtzaal PAIKA</NameNL>
+        <NameFR>Wachtzaal PAIKA</NameFR>
+        <NameEN>Wachtzaal PAIKA</NameEN>
+        <Services />
+    </Waitingroom>
+</data>

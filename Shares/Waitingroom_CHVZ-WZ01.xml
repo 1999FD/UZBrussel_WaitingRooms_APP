@@ -1,1 +1,9 @@
-<data><Waitingroom><Id>CHVZ-WZ01</Id><NameNL>CHVZ wachtzaal</NameNL><NameFR>CHVZ wachtzaal</NameFR><NameEN>CHVZ wachtzaal</NameEN><Services/></Waitingroom></data>
+<data>
+    <Waitingroom>
+        <Id>CHVZ-WZ01</Id>
+        <NameNL>CHVZ wachtzaal</NameNL>
+        <NameFR>CHVZ wachtzaal</NameFR>
+        <NameEN>CHVZ wachtzaal</NameEN>
+        <Services />
+    </Waitingroom>
+</data>
