@@ -44,7 +44,6 @@ $(document).ready(function() {
                         key,
                         value.displayName,
                         value.orientationName,
-                        value.service,
                         `<div class="buttons"><button class="go-row">PREVIEW</button> <button class="delete-row">DELETE</button></div>` // Buttons side by side
                     ]).draw();
                 });
@@ -64,24 +63,24 @@ $(document).ready(function() {
         // Get data from waiting room id
         const resp = await fetch(`${baseUrl}/waiting_rooms_data.json?${Date.now()}`);
         const waiting_rooms = await resp.json();  
-        const waiting_room_data_displays = waiting_rooms[waiting_room_id];        
-        Object.entries(waiting_room_data_displays).forEach(([key, value]) => {
-            // Sort the loketIDs
-            table.row.add([
-                key,
-                value.displayName,
-                value.orientationName,
-                value.service,
-                `<div class="buttons"><button class="go-row">PREVIEW</button> <button class="delete-row">DELETE</button></div>` // Buttons side by side
-            ]).draw();
-        });
+        if(waiting_rooms[waiting_room_id] != undefined) {
+            const waiting_room_data_displays = waiting_rooms[waiting_room_id];        
+            Object.entries(waiting_room_data_displays).forEach(([key, value]) => {
+                // Sort the loketIDs
+                table.row.add([
+                    key,
+                    value.displayName,
+                    value.orientationName,
+                    `<div class="buttons"><button class="go-row">PREVIEW</button> <button class="delete-row">DELETE</button></div>` // Buttons side by side
+                ]).draw();
+            });
+        }
 
         function myCallbackFunction (updatedCell, updatedRow, oldValue) {
             // Fetch json from url 
             displayId = updatedRow.data()[0];
             displayName = updatedRow.data()[1];
             orientationName = updatedRow.data()[2];
-            service = updatedRow.data()[3];
             wr_id = localStorage.getItem('waiting_room_id');
 
             // Send requst to update the data
@@ -94,14 +93,13 @@ $(document).ready(function() {
                     waiting_room_id: wr_id,
                     displayId: displayId,
                     displayName: displayName,
-                    orientationName: orientationName,
-                    service: service,
+                    orientationName: orientationName
                 }),
             })
             .then(data => {
                 console.log(data);
             })
-            console.log(wr_id, displayId, displayName, orientationName, service);
+            console.log(wr_id, displayId, displayName, orientationName);
         }
 
         table.MakeCellsEditable({
@@ -167,7 +165,7 @@ $(document).ready(function() {
 
         const newId = highestId + 1;
         // Take content the first playlist
-        table.row.add([newId.toString(), 'Display Name', 'horizontal', [], `<div class="buttons"><button class="go-row">PREVIEW</button> <button class="delete-row">DELETE</button></div>`]).draw();
+        table.row.add([newId.toString(), 'Display Name', 'horizontal', `<div class="buttons"><button class="go-row">PREVIEW</button> <button class="delete-row">DELETE</button></div>`]).draw();
         // Also upload the new row to the server
         fetch(`${baseUrl}/Custom_PHP/uploadWZ`, {
             method: 'POST',
@@ -178,8 +176,7 @@ $(document).ready(function() {
                 waiting_room_id: localStorage.getItem('waiting_room_id'),
                 displayId: newId,
                 displayName: 'Display Name',
-                orientationName: 'horizontal',
-                service: [],
+                orientationName: 'horizontal'
             }),
         })
     });
@@ -219,25 +216,17 @@ $(document).ready(function() {
         window.location.href = `${baseUrl}/html/displayWaitingRoom?waitingRoomId=${waitingRoomId}&displayId=${id}`;
     });
 
-    // Handle click on Loketten column to redirect to the playlist URL
-    $('#theTable tbody').on('click', 'td:nth-child(4)', function() {
-        // Get the row associated with the clicked cell
-        var row = table.row($(this).parents('tr')).data();
-        const displayId = row[0];
-        const displayName = row[1];
-        const orientationName = row[2];
-        console.log(row[3]);
-        var serviceIds = row[3];
-        // if (serviceIds.length == 0) {
-        //     serviceIds = []
-        // }else{
-        //     serviceIds = row[3].split(',');
-        // }
-        console.log(serviceIds);
-        console.log(displayId, displayName, orientationName, serviceIds);
-        // Always pass selected dropdown value
-        const dropdownvalue = document.getElementById('waiting_room_dropdown').value;
-        // Redirect to another page with the loketIDs as query parameter
-        window.location.href = `./waiting_rooms_display.html?serviceIds=${serviceIds}&displayId=${displayId}&displayName=${displayName}&orientationName=${orientationName}&waitingRoomId=${dropdownvalue}`;
-    });
+    // // Handle click on Loketten column to redirect to the playlist URL
+    // $('#theTable tbody').on('click', 'td:nth-child(4)', function() {
+    //     // Get the row associated with the clicked cell
+    //     var row = table.row($(this).parents('tr')).data();
+    //     const displayId = row[0];
+    //     const displayName = row[1];
+    //     const orientationName = row[2];
+    //     console.log(displayId, displayName, orientationName);
+    //     // Always pass selected dropdown value
+    //     const dropdownvalue = document.getElementById('waiting_room_dropdown').value;
+    //     // Redirect to another page with the loketIDs as query parameter
+    //     window.location.href = `./waiting_rooms_display.html?&displayId=${displayId}&displayName=${displayName}&orientationName=${orientationName}&waitingRoomId=${dropdownvalue}`;
+    // });
 });

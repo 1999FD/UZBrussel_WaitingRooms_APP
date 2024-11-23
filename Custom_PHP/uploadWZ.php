@@ -17,7 +17,6 @@ $waiting_room_id = $data['waiting_room_id'];
 $displayId = $data['displayId'];
 $displayName = $data['displayName'];
 $orientationName = $data['orientationName'];
-$service = $data['service'];
 
 // First find the waiting room
 $found_wr = false;
@@ -31,7 +30,6 @@ foreach ($currentData as $key => $value) {
                 $found_display = true;
                 $currentData[$key][$key2]['displayName'] = $displayName;
                 $currentData[$key][$key2]['orientationName'] = $orientationName;
-                $currentData[$key][$key2]['service'] = $service;
                 break;
             }
         }
@@ -45,14 +43,12 @@ if (!$found_wr || !$found_display) {
         $currentData[$waiting_room_id][$displayId] = [
             'displayName' => $displayName,
             'orientationName' => $orientationName,
-            'service' => $service
         ];
     } else {
         // Add new display to the existing waiting room without overwriting
         $currentData[$waiting_room_id][$displayId] = [
             'displayName' => $displayName,
             'orientationName' => $orientationName,
-            'service' => $service
         ];
     }
 }
