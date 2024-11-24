@@ -30,7 +30,7 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
         <div class="content">
             <div class="content-left">
                 <div class="section" v-for="(service, index) in services" :key="index" :style="{ display: index >= previousSectionIdx  && index < sectionIdx ? 'block' : 'none' }">
-                    <h2>{{ service.NameNL }}</h2>
+                    <h2>{{ service['Name' + currentLanguage] }}</h2>
                     <div v-for="(unit, index) in service.Units" :key="index">
                         <!-- Check if `unit` is an array -->
                         <template v-if="Array.isArray(unit)">
@@ -61,8 +61,6 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                             </div>
                         </template>
                     </div>
-
-
                 </div>
             </div>
             <div class="content-right">
@@ -235,8 +233,8 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                                 location.reload();
                             }
                         })
-                        newServiceIds.forEach(i => {
-                            if (!serviceIds.includes(i)) {
+                        serviceIds.forEach(i => {
+                            if (!newServiceIds.includes(i)) {
                                 location.reload();
                             }
                         })

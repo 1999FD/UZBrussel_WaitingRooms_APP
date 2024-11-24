@@ -75,7 +75,7 @@ body {
 }
 
 .content-left {
-    width: 60%;
+    width: 100%;
     padding: 40px;
     padding-top: 15px;
     padding-right: 0;
@@ -159,10 +159,6 @@ body {
     color: #333; /* Text colour */
 }
 
-.unit {
-    font-size: 3rem; /* Font size for unit text */
-}
-
 .section {
     margin-bottom: 10px;
 }
@@ -198,6 +194,27 @@ body {
     bottom: 0; /* Aligns to the bottom edge */
     margin: 0; /* Remove any margin, as it's no longer needed */
     display: block;
+}
+
+.unit {
+    display: flex;
+    align-items: baseline; /* Ensure text aligns properly */
+    font-size: 3rem; /* Font size for unit text */
+}
+
+.id {
+    display: inline-block;
+    width: 280px; /* Set a fixed width for the ID part */
+    text-align: left; /* Aligns the ID to the right inside the fixed width */
+}
+
+.name {
+    white-space: normal; /* Allow text to wrap to the next line */
+    word-wrap: break-word; /* Break long words if necessary */
+    word-break: break-word; /* Ensure long words are broken to fit */
+    line-height: 1.2; /* Adjust line spacing for better readability */
+    display: inline-block; /* Ensure proper alignment */
+    max-width: 575px;
 }
 
 

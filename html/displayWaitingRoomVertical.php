@@ -29,8 +29,9 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
         <div class="subheader" class="row"></div>
         <div class="content">
             <div class="content-left">
-                <div class="section" v-for="(service, index) in selectedServices" :key="index" :style="{ display: index >= previousSectionIdx  && index < sectionIdx ? 'block' : 'none' }">
-                    <h2>{{ service.NameNL }}</h2>
+                <div class="section" v-for="(service, index) in services" :key="index" :style="{ display: index >= previousSectionIdx  && index < sectionIdx ? 'block' : 'none' }">
+                    <!-- Display the service name based on the current language -->
+                    <h2>{{ service['Name' + currentLanguage] }}</h2>
                     <div v-for="(unit, index) in service.Units" :key="index">
                         <!-- Check if `unit` is an array -->
                         <template v-if="Array.isArray(unit)">
@@ -40,7 +41,10 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                                 <img v-if="item.WaitTimeInMinutes <= 20" src="../img/clock-green.png" alt="Green Icon" class="icon" />
                                 <img v-else-if="item.WaitTimeInMinutes > 20 && item.WaitTimeInMinutes <= 40" src="../img/clock-orange.png" alt="Orange Icon" class="icon" />
                                 <img v-else src="../img/clock-red.png" alt="Red Icon" class="icon" />
-                                <span class="unit">{{ trimText(item['Name' + currentLanguage]) }}</span>
+                                <span class="unit">
+                                    <span class="id">{{service.Id}}-{{item.Id}}</span>
+                                    <span class="name">{{ trimText(item['Name' + currentLanguage]) }}</span>
+                                </span>
                             </div>
                         </template>
 
@@ -51,8 +55,10 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                                 <img v-if="unit.WaitTimeInMinutes <= 20" src="../img/clock-green.png" alt="Green Icon" class="icon" />
                                 <img v-else-if="unit.WaitTimeInMinutes > 20 && unit.WaitTimeInMinutes <= 40" src="../img/clock-orange.png" alt="Orange Icon" class="icon" />
                                 <img v-else src="../img/clock-red.png" alt="Red Icon" class="icon" />
-                                <span class="unit">{{ trimText(unit['Name' + currentLanguage]) }}</span>
-
+                                <span class="unit">
+                                    <span class="id">{{service.Id}}-{{unit.Id}}</span>
+                                    <span class="name">{{ trimText(unit['Name' + currentLanguage]) }}</span>
+                                </span>
                             </div>
                         </template>
                     </div>
@@ -60,7 +66,7 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
 
                 </div>
             </div>
-            <div class="content-right">
+            <!-- <div class="content-right">
                 <div class="date-time">
                     <div class="time">{{time}}</div>
                     <div class="date">{{date}}</div>
@@ -77,8 +83,7 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                         <img src="../img/clock-red.png" alt="Red Icon" class="icon" /> > 40 min
                     </div>
                 </div>
-                <img src="../img/UZ-Brussel-logo.png" alt="UZBrussel Logo" class="logo" />
-            </div>
+            </div> -->
         </div>
     </div>
     <script src="../js/displayWaitingRoom.js"></script>
@@ -182,6 +187,33 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                         this.waitingRoomNameFR = waitingRoom.NameFR;
                         this.waitingRoomNameEN = waitingRoom.NameEN;
                         this.services = waitingRoom.Services.Service
+                        let countedUnits = 0;
+                            let sectionsToShow = 0;
+                            let totalPages = 0; // Reset total pages before counting
+                            let unitsPerPage = 15; // Set the number of units per page
+                            this.services.forEach((service, idx) => {
+                                let unitsInService = Array.isArray(service.Units.Unit) ? service.Units.Unit.length : 1;
+                                unitsInService += 1; // Because we have to count the service header as well
+                                // Track units for each page
+                                if (countedUnits + unitsInService <= unitsPerPage) {
+                                    sectionsToShow++;
+                                    countedUnits += unitsInService;
+                                } else {
+                                    // Increment page count if limit is exceeded and reset counter
+                                    totalPages++;
+                                    this.sectionArr.push(sectionsToShow);
+                                    countedUnits = unitsInService;
+                                    sectionsToShow = 1;
+
+                                }
+                            });
+                            // Add an additional page for remaining units if needed
+                            if (countedUnits > 0 || sectionsToShow > 0) {
+                                totalPages++;
+                                this.sectionArr.push(sectionsToShow);
+                            }
+                            this.sectionIdx = this.sectionArr[0];
+                            console.log(this.sectionArr)
                     } catch (error) {
                         console.error('Error fetching data.json:', error);
                     }
@@ -193,33 +225,27 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                         const xmlText = await response.text(); // Ensure xmlText is retrieved as a string
                         const parser = new DOMParser();
                         const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
-                        const services = this.xmlToJson(xmlDoc).Services;
-                        this.services = services.Service;
+                        var newServices = this.xmlToJson(xmlDoc).Services.Service;
                         const response2 = await fetch(`${baseUrl}/waiting_rooms_data.json?${Date.now()}`); // Fetch data.json with timestamp
                         const jsonData = await response2.json();
-                        const selectedServiceIds = jsonData[this.waitingRoomId][this.displayId].service;
-                        const newSelectedServices = this.services.filter(service => selectedServiceIds.includes(service.Id));
-                        if (this.initialSelectedServices.length === 0) {
-                            this.initialSelectedServices = newSelectedServices;
-                            this.selectedServices = newSelectedServices;
-                        } else {
-                            // Check if selected services have changed from initial selected services and reload page if they have
-                            const initialSelectedServiceIds = this.initialSelectedServices.map(service => service.Id);
-                            const selectedServiceIds = newSelectedServices.map(service => service.Id);
-                            selectedServiceIds.forEach(i => {
-                                if (!initialSelectedServiceIds.includes(i)) {
-                                    location.reload();
-                                }
-                            })
-                            initialSelectedServiceIds.forEach(i => {
-                                if (!selectedServiceIds.includes(i)) {
-                                    location.reload();
-                                }
-                            })
-                        }
+                        
+                        // Check if selected services have changed from initial selected services and reload page if they have
+                        const serviceIds = this.services.map(service => service.Id);
+                        const newServiceIds = newServices.map(service => service.Id);
+                        newServiceIds.forEach(i => {
+                            if (!serviceIds.includes(i)) {
+                                location.reload();
+                            }
+                        })
+                        serviceIds.forEach(i => {
+                            if (!newServiceIds.includes(i)) {
+                                location.reload();
+                            }
+                        })
+                        
                         // Update WaitTimeInMinutes in selectedServices based on newSelectedServices
-                        this.selectedServices.forEach((existingService, serviceIndex) => {
-                            const newService = newSelectedServices.find(service => service.Id === existingService.Id);
+                        this.services.forEach((existingService, serviceIndex) => {
+                            const newService = newServices.find(service => service.Id === existingService.Id);
                             if (newService) {
                                 if (Array.isArray(existingService.Units.Unit)) {
                                     // If Units is an array, loop through each unit
@@ -263,7 +289,7 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                         this.fetchXMLData();
                         this.changeLanguage();
                         this.setHeader();
-                    }, 10000); // 10 seconds
+                    }, 100000); // 10 seconds
                     setInterval(() => {
                         this.updateTime();
                     }, 30000);
@@ -277,43 +303,6 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                 this.fetchXMLData();
                 this.setHeader();
                 this.updateTime();
-            },
-            watch: {
-                // Watch for changes in selectedServices
-                selectedServices(newServices) {
-                    if (newServices.length > 0) {
-                        // Wait for Vue to finish updating the DOM
-                        this.$nextTick(() => {
-                            console.log("DOM fully updated with selectedServices:");
-                            let countedUnits = 0;
-                            let sectionsToShow = 0;
-                            let totalPages = 0; // Reset total pages before counting
-                            let unitsPerPage = 15; // Set the number of units per page
-                            this.selectedServices.forEach((service, idx) => {
-                                let unitsInService = Array.isArray(service.Units.Unit) ? service.Units.Unit.length : 1;
-                                unitsInService += 1; // Because we have to count the service header as well
-                                // Track units for each page
-                                if (countedUnits + unitsInService <= unitsPerPage) {
-                                    sectionsToShow++;
-                                    countedUnits += unitsInService;
-                                } else {
-                                    // Increment page count if limit is exceeded and reset counter
-                                    totalPages++;
-                                    this.sectionArr.push(sectionsToShow);
-                                    countedUnits = unitsInService;
-                                    sectionsToShow = 1;
-
-                                }
-                            });
-                            // Add an additional page for remaining units if needed
-                            if (countedUnits > 0 || sectionsToShow > 0) {
-                                totalPages++;
-                                this.sectionArr.push(sectionsToShow);
-                            }
-                            this.sectionIdx = this.sectionArr[0];
-                        });
-                    }
-                }
             },
             mounted() {
                 this.updateDataPeriodically();
