@@ -4,5 +4,233 @@
             "displayName": "Display Name",
             "orientationName": "horizontal"
         }
+    },
+    "LAN1-GER": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "KAZK-WZ04": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "vertical"
+        }
+    },
+    "A757-WZ01": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "CHVZ-WZ01": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "CRG-WZ02": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "vertical"
+        }
+    },
+    "POL0-WZ03": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "CRG-WZ01": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "KAZK-WZ01": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "CONR-WZ01": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "CRG-WZ03": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "DIAB-WZ01": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "LAN1-KLIN": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "HOS3-WZ01": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "KAZK-WZ02": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "KAZK-WZ03": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "KAZK-WZ05": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "MBV-WZ01": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "ONCO-WZ01": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "UZB1-WZ01": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "POLA-WZX1": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "POL5-WZ02": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "POL5-WZ01": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "POL4-WZ01": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "POL3-WZ01": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "POL2-WZ07": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "POL2-WZ06": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "POL2-WZ05": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "POL2-WZ04": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "POL2-WZ03": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "POL2-WZ02": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "POL2-WZ01": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "POL1-WZ02": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "POL1-WZ01": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "POL0-WZ05": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "POL0-WZ04": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "POL0-WZ02": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "POL0-WZ01": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
+    },
+    "ONCO-WZ02": {
+        "1": {
+            "displayName": "Display Name",
+            "orientationName": "horizontal"
+        }
     }
 }

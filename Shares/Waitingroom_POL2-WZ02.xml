@@ -4,6 +4,79 @@
         <NameNL>Interne Gen. - Bloedafname</NameNL>
         <NameFR>Méd. Intern - Prise de sang</NameFR>
         <NameEN>Internal med. - Blood test</NameEN>
-        <Services />
+        <Services>
+            <Service>
+                <Id>CIG</Id>
+                <NameNL>Interne geneeskunde</NameNL>
+                <NameFR>Médecine interne</NameFR>
+                <NameEN>Internal medicine</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>HRC5</Id>
+                        <NameNL>Consultatie Infectiologie</NameNL>
+                        <NameFR>Consultatie Infectiologie</NameFR>
+                        <NameEN>Consultatie Infectiology</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>WYCA</Id>
+                        <NameNL>Carolien Wylock</NameNL>
+                        <NameFR>Carolien Wylock</NameFR>
+                        <NameEN>Carolien Wylock</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>HRC3</Id>
+                        <NameNL>HRC Consultatie Infectiologie</NameNL>
+                        <NameFR>HRC Consultation Infectiologie</NameFR>
+                        <NameEN>HRC Consultation Infectiology</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>HRC1</Id>
+                        <NameNL>HRC Consultatie Infectiologie</NameNL>
+                        <NameFR>HRC Consultation Infectiologie</NameFR>
+                        <NameEN>HRC Consultation Infectiology</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>CBLO</Id>
+                <NameNL>Bloedafname</NameNL>
+                <NameFR>Prise de sang</NameFR>
+                <NameEN>Blood test</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>BLO3</Id>
+                        <NameNL>Bloedafname 3</NameNL>
+                        <NameFR>Prise de sang 3</NameFR>
+                        <NameEN>Blood examination 3</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>BLO2</Id>
+                        <NameNL>Bloedafname 2</NameNL>
+                        <NameFR>Prise de sang 2</NameFR>
+                        <NameEN>Blood examination 2</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>BLO4</Id>
+                        <NameNL>Staalinlevering 4</NameNL>
+                        <NameFR>Soumission d'échantillons 4</NameFR>
+                        <NameEN>Sample submission 4</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>BLO1</Id>
+                        <NameNL>Bloedafname 1</NameNL>
+                        <NameFR>Prise de sang 1</NameFR>
+                        <NameEN>Blood examination 1</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+        </Services>
     </Waitingroom>
 </data>

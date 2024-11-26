@@ -156,7 +156,7 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                             this.previousSectionIdx = 0;
                         } else {
                             this.currentPage++;
-                            this.previousSectionIdx += this.sectionIdx
+                            this.previousSectionIdx = this.sectionIdx
                             this.sectionIdx += this.sectionArr[this.currentPage - 1];
                         }
 
@@ -187,6 +187,17 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                         this.waitingRoomNameFR = waitingRoom.NameFR;
                         this.waitingRoomNameEN = waitingRoom.NameEN;
                         this.services = waitingRoom.Services.Service
+                        if (!Array.isArray(this.services)) {
+                            this.services = [this.services];
+                        }
+                        this.services.sort((a, b) => {
+                            // Get the length of units for both 'a' and 'b'. If 'Units.Unit' is not an array, assume length is 1.
+                            const aLength = Array.isArray(a.Units.Unit) ? a.Units.Unit.length : 1;
+                            const bLength = Array.isArray(b.Units.Unit) ? b.Units.Unit.length : 1;
+
+                            // Return comparison value for sorting
+                            return aLength - bLength;
+                        });
                         let countedUnits = 0;
                             let sectionsToShow = 0;
                             let totalPages = 0; // Reset total pages before counting
@@ -228,7 +239,10 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                         var newServices = this.xmlToJson(xmlDoc).Services.Service;
                         const response2 = await fetch(`${baseUrl}/waiting_rooms_data.json?${Date.now()}`); // Fetch data.json with timestamp
                         const jsonData = await response2.json();
-                        
+                        // If newServices is not an array, convert it to an array
+                        if (!Array.isArray(newServices)) {
+                            newServices = [newServices];
+                        }
                         // Check if selected services have changed from initial selected services and reload page if they have
                         const serviceIds = this.services.map(service => service.Id);
                         const newServiceIds = newServices.map(service => service.Id);
@@ -242,11 +256,11 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                                 location.reload();
                             }
                         })
-                        
                         // Update WaitTimeInMinutes in selectedServices based on newSelectedServices
                         this.services.forEach((existingService, serviceIndex) => {
                             const newService = newServices.find(service => service.Id === existingService.Id);
                             if (newService) {
+                                console.log(newService)
                                 if (Array.isArray(existingService.Units.Unit)) {
                                     // If Units is an array, loop through each unit
                                     existingService.Units.Unit.forEach((existingUnit, unitIndex) => {
@@ -289,7 +303,7 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                         this.fetchXMLData();
                         this.changeLanguage();
                         this.setHeader();
-                    }, 100000); // 10 seconds
+                    }, 2000); // 10 seconds
                     setInterval(() => {
                         this.updateTime();
                     }, 30000);

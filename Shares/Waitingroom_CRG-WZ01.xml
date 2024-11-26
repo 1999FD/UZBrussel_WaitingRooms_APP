@@ -6,28 +6,6 @@
         <NameEN>CRG + 1</NameEN>
         <Services>
             <Service>
-                <Id>OBFE</Id>
-                <NameNL>Operatiekwartier Brussels IVF</NameNL>
-                <NameFR>Salle d'opération Brussels IVF</NameFR>
-                <NameEN>Operating theater Brussels IVF</NameEN>
-                <Units>
-                    <Unit>
-                        <Id>CRG4</Id>
-                        <NameNL>Crg Zaal 4 Et</NameNL>
-                        <NameFR>Crg Zaal 4 Et</NameFR>
-                        <NameEN>Crg Zaal 4 Et</NameEN>
-                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
-                    </Unit>
-                    <Unit>
-                        <Id>CRG5</Id>
-                        <NameNL>Crg Zaal 5 Pick-up</NameNL>
-                        <NameFR>Crg Zaal 5 Pick-up</NameFR>
-                        <NameEN>Crg Zaal 5 Pick-up</NameEN>
-                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
-                    </Unit>
-                </Units>
-            </Service>
-            <Service>
                 <Id>CFER</Id>
                 <NameNL>Brussels IVF</NameNL>
                 <NameFR>Brussels IVF</NameFR>
@@ -38,21 +16,42 @@
                         <NameNL>Bloed (dm)</NameNL>
                         <NameFR>Bloed (dm)</NameFR>
                         <NameEN>Bloed (dm)</NameEN>
-                        <WaitTimeInMinutes>199</WaitTimeInMinutes>
+                        <WaitTimeInMinutes>369</WaitTimeInMinutes>
                     </Unit>
                     <Unit>
-                        <Id>INS</Id>
-                        <NameNL>Inseminaties</NameNL>
-                        <NameFR>Inseminaties</NameFR>
-                        <NameEN>Inseminaties</NameEN>
-                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                        <Id>FADM</Id>
+                        <NameNL>Administratie terugplaatsing</NameNL>
+                        <NameFR>Administration du transfert</NameFR>
+                        <NameEN>Administration transfer</NameEN>
+                        <WaitTimeInMinutes>249</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>ISPE</Id>
+                        <NameNL>Routine spermastaal</NameNL>
+                        <NameFR>Routine analyse de sperme</NameFR>
+                        <NameEN>Routine sperm analysis</NameEN>
+                        <WaitTimeInMinutes>329</WaitTimeInMinutes>
                     </Unit>
                     <Unit>
                         <Id>ENBD</Id>
                         <NameNL>Bloed</NameNL>
                         <NameFR>Bloed</NameFR>
                         <NameEN>Bloed</NameEN>
-                        <WaitTimeInMinutes>199</WaitTimeInMinutes>
+                        <WaitTimeInMinutes>449</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>FOAM</Id>
+                        <NameNL>Hysterosalpingo-Foam-Sonography</NameNL>
+                        <NameFR>Hysterosalpingo-Foam-Sonography</NameFR>
+                        <NameEN>Hysterosalpingo-Foam-Sonography</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>CRYS</Id>
+                        <NameNL>Cryopreservatie Sperma</NameNL>
+                        <NameFR>Cryopreservatie Sperma</NameFR>
+                        <NameEN>Cryopreservatie Sperma</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
                     </Unit>
                 </Units>
             </Service>

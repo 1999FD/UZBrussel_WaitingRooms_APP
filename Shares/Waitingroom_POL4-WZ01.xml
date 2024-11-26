@@ -4,6 +4,29 @@
         <NameNL>Medische Genetica</NameNL>
         <NameFR>Génétique médicale</NameFR>
         <NameEN>Medical genetics</NameEN>
-        <Services />
+        <Services>
+            <Service>
+                <Id>CGEN</Id>
+                <NameNL>Centrum voor Medische Genetica</NameNL>
+                <NameFR>Centre de Génétique Médicale</NameFR>
+                <NameEN>Center for Medical Genetics</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>ENDO</Id>
+                        <NameNL>consultatie Endocrinologie-Medische Genetica</NameNL>
+                        <NameFR>consultation Endocrinologie-Génétique Médicale</NameFR>
+                        <NameEN>consultation Endocrinology-Medical Genetics</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>SUYT</Id>
+                        <NameNL>consultatie Dr. S. Uyttebroeck</NameNL>
+                        <NameFR>consultation Dr. S. Uyttebroeck</NameFR>
+                        <NameEN>consultation Dr. S. Uyttebroeck</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+        </Services>
     </Waitingroom>
 </data>

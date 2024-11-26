@@ -42,7 +42,7 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                                 <img v-else src="../img/clock-red.png" alt="Red Icon" class="icon" />
                                 <span class="unit">
                                     <span class="id">{{service.Id}}-{{item.Id}}</span>
-                                    <span class="name">{{ trimText(item['Name' + currentLanguage]) }}</span>
+                                    <span class="name">{{ item['Name' + currentLanguage] }}</span>
                                 </span>
                             </div>
                         </template>
@@ -56,7 +56,7 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                                 <img v-else src="../img/clock-red.png" alt="Red Icon" class="icon" />
                                 <span class="unit">
                                     <span class="id">{{service.Id}}-{{unit.Id}}</span>
-                                    <span class="name">{{ trimText(unit['Name' + currentLanguage]) }}</span>
+                                    <span class="name">{{ unit['Name' + currentLanguage] }}</span>
                                 </span>
                             </div>
                         </template>
@@ -153,10 +153,9 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                             this.previousSectionIdx = 0;
                         } else {
                             this.currentPage++;
-                            this.previousSectionIdx += this.sectionIdx
+                            this.previousSectionIdx = this.sectionIdx
                             this.sectionIdx += this.sectionArr[this.currentPage - 1];
                         }
-
                     }
                 },
                 async fetchOrientation() {
@@ -184,32 +183,76 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                         this.waitingRoomNameFR = waitingRoom.NameFR;
                         this.waitingRoomNameEN = waitingRoom.NameEN;
                         this.services = waitingRoom.Services.Service
-                        let countedUnits = 0;
-                            let sectionsToShow = 0;
-                            let totalPages = 0; // Reset total pages before counting
-                            let unitsPerPage = 10; // Set the number of units per page
-                            this.services.forEach((service, idx) => {
-                                let unitsInService = Array.isArray(service.Units.Unit) ? service.Units.Unit.length : 1;
-                                unitsInService += 1; // Because we have to count the service header as well
-                                // Track units for each page
-                                if (countedUnits + unitsInService <= unitsPerPage) {
-                                    sectionsToShow++;
-                                    countedUnits += unitsInService;
-                                } else {
-                                    // Increment page count if limit is exceeded and reset counter
-                                    totalPages++;
-                                    this.sectionArr.push(sectionsToShow);
-                                    countedUnits = unitsInService;
-                                    sectionsToShow = 1;
+                        // If not a list make a list of it with 1 object
+                        if (!Array.isArray(this.services)) {
+                            this.services = [this.services];
+                        }
+                        // If there is a service with more than 10 units, split it into 2 services with same name but half the units
+                        this.services.forEach((service, idx) => {
+                            // UnitsLength
+                            const unitsLength = Array.isArray(service.Units.Unit) ? service.Units.Unit.length : 1;
+                            console.log(unitsLength);
+                            if (Array.isArray(service.Units.Unit) && unitsLength > 8 && unitsLength <= 17) {
+                                const toSlice = service.Units.Unit.length / 2;
+                                const newService = JSON.parse(JSON.stringify(service));
+                                newService.Units.Unit = service.Units.Unit.slice(toSlice);
+                                service.Units.Unit = service.Units.Unit.slice(0, toSlice);
+                                this.services.splice(idx + 1, 0, newService);
+                            }
+                            // If unitsLength larger than 16, divide into 3 services
+                            else if (Array.isArray(service.Units.Unit) && unitsLength > 17) {
+                                // Calculate slicing points for three parts
+                                const toSlice = Math.ceil(unitsLength / 3);
 
-                                }
-                            });
-                            // Add an additional page for remaining units if needed
-                            if (countedUnits > 0 || sectionsToShow > 0) {
+                                // Create two new copies of the service object
+                                const newService1 = JSON.parse(JSON.stringify(service));
+                                const newService2 = JSON.parse(JSON.stringify(service));
+
+                                // Split the original service into three parts
+                                newService1.Units.Unit = service.Units.Unit.slice(toSlice, toSlice * 2);
+                                newService2.Units.Unit = service.Units.Unit.slice(toSlice * 2);
+                                service.Units.Unit = service.Units.Unit.slice(0, toSlice);
+
+                                // Insert the new services after the original
+                                this.services.splice(idx + 1, 0, newService1);
+                                this.services.splice(idx + 2, 0, newService2);
+                            }
+                        });
+                        // Sort all the services by the amount of units they have
+                        this.services.sort((a, b) => {
+                            // Get the length of units for both 'a' and 'b'. If 'Units.Unit' is not an array, assume length is 1.
+                            const aLength = Array.isArray(a.Units.Unit) ? a.Units.Unit.length : 1;
+                            const bLength = Array.isArray(b.Units.Unit) ? b.Units.Unit.length : 1;
+
+                            // Return comparison value for sorting
+                            return aLength - bLength;
+                        });
+                        let countedUnits = 0;
+                        let sectionsToShow = 0;
+                        let totalPages = 0; // Reset total pages before counting
+                        let unitsPerPage = 10; // Set the number of units per page
+                        this.services.forEach((service, idx) => {
+                            let unitsInService = Array.isArray(service.Units.Unit) ? service.Units.Unit.length : 1;
+                            unitsInService += 1; // Because we have to count the service header as well
+                            // Track units for each page
+                            if (countedUnits + unitsInService <= unitsPerPage) {
+                                sectionsToShow++;
+                                countedUnits += unitsInService;
+                            } else {
+                                // Increment page count if limit is exceeded and reset counter
                                 totalPages++;
                                 this.sectionArr.push(sectionsToShow);
+                                countedUnits = unitsInService;
+                                sectionsToShow = 1;
+
                             }
-                            this.sectionIdx = this.sectionArr[0];
+                        });
+                        // Add an additional page for remaining units if needed
+                        if (countedUnits > 0 || sectionsToShow > 0) {
+                            totalPages++;
+                            this.sectionArr.push(sectionsToShow);
+                        }
+                        this.sectionIdx = this.sectionArr[0];
                     } catch (error) {
                         console.error('Error fetching data.json:', error);
                     }
@@ -224,7 +267,10 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                         var newServices = this.xmlToJson(xmlDoc).Services.Service;
                         const response2 = await fetch(`${baseUrl}/waiting_rooms_data.json?${Date.now()}`); // Fetch data.json with timestamp
                         const jsonData = await response2.json();
-                        
+                        // If newServices is not an array, make it an array
+                        if (!Array.isArray(newServices)) {
+                            newServices = [newServices];
+                        }
                         // Check if selected services have changed from initial selected services and reload page if they have
                         const serviceIds = this.services.map(service => service.Id);
                         const newServiceIds = newServices.map(service => service.Id);
@@ -238,7 +284,7 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                                 location.reload();
                             }
                         })
-                        
+
                         // Update WaitTimeInMinutes in selectedServices based on newSelectedServices
                         this.services.forEach((existingService, serviceIndex) => {
                             const newService = newServices.find(service => service.Id === existingService.Id);
@@ -259,7 +305,6 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                                     // If Units is a single object
                                     const newUnit = newService.Units.Unit;
                                     if (newUnit && existingService.Units.Unit.Id === newUnit.Id) {
-                                        // console.log(newUnit.WaitTimeInMinutes, existingService.Units.Unit.WaitTimeInMinutes)
                                         // Only update if the WaitTimeInMinutes differs
                                         if (existingService.Units.Unit.WaitTimeInMinutes !== newUnit.WaitTimeInMinutes) {
                                             console.log(`Updating WaitTimeInMinutes for unit ${existingService.Units.Unit.Id}: ${existingService.Units.Unit.WaitTimeInMinutes} -> ${newUnit.WaitTimeInMinutes}`);

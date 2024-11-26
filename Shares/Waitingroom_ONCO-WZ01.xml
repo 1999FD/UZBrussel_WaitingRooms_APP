@@ -4,6 +4,121 @@
         <NameNL>Oncologie</NameNL>
         <NameFR>Oncologie</NameFR>
         <NameEN>Oncology</NameEN>
-        <Services />
+        <Services>
+            <Service>
+                <Id>CHEM</Id>
+                <NameNL>Hematologie</NameNL>
+                <NameFR>Hématologie</NameFR>
+                <NameEN>Hematology</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>BHEM</Id>
+                        <NameNL>Behandeling Hematologie</NameNL>
+                        <NameFR>Traitement Hematologie</NameFR>
+                        <NameEN>Treatment Hematology</NameEN>
+                        <WaitTimeInMinutes>40</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>BRWO</Id>
+                        <NameNL>Dr. De Brouwer W.</NameNL>
+                        <NameFR>Dr. De Brouwer W.</NameFR>
+                        <NameEN>Dr. De Brouwer W.</NameEN>
+                        <WaitTimeInMinutes>9</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>FASY</Id>
+                        <NameNL>Dr S. Faict</NameNL>
+                        <NameFR>Dr S. Faict</NameFR>
+                        <NameEN>Dr S. Faict</NameEN>
+                        <WaitTimeInMinutes>3</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>BEVE</Id>
+                        <NameNL>Dr. Beckers V.</NameNL>
+                        <NameFR>Dr. Beckers V.</NameFR>
+                        <NameEN>Dr. Beckers V.</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>ASHE</Id>
+                        <NameNL>Assistent Hematologie</NameNL>
+                        <NameFR>Assistent Hematologie</NameFR>
+                        <NameEN>Assistent Hematologie</NameEN>
+                        <WaitTimeInMinutes>18</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>STOL</Id>
+                        <NameNL>Stollingsziekten</NameNL>
+                        <NameFR>Maladies de la coagulation</NameFR>
+                        <NameEN>Coagulation diseases</NameEN>
+                        <WaitTimeInMinutes>1</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>CONG</Id>
+                <NameNL>Oncologische geneeskunde</NameNL>
+                <NameFR>Centre d'oncologie</NameFR>
+                <NameEN>Oncology centre</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>BA</Id>
+                        <NameNL>Bloedafname</NameNL>
+                        <NameFR>Prise de sang</NameFR>
+                        <NameEN>Blood test</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>VPL3</Id>
+                        <NameNL>Verpleegkundige lijst</NameNL>
+                        <NameFR>Liste d'infirmière</NameFR>
+                        <NameEN>Nursing list</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>BA2</Id>
+                        <NameNL>Bloedafname</NameNL>
+                        <NameFR>Prise de sang</NameFR>
+                        <NameEN>Blood test</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>DIET</Id>
+                        <NameNL>Dietiste</NameNL>
+                        <NameFR>Dietiste</NameFR>
+                        <NameEN>Dietiste</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>DEVE</Id>
+                        <NameNL>Prof. Dr. De Coster L. / Dr. Vekens K.</NameNL>
+                        <NameFR>Prof. Dr. De Coster L. / Dr. Vekens K.</NameFR>
+                        <NameEN>Prof. Dr. De Coster L. / Dr. Vekens K.</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>VPL1</Id>
+                        <NameNL>Verpleegkundige lijst</NameNL>
+                        <NameFR>Liste d'infirmières</NameFR>
+                        <NameEN>Nursing liste</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>ASSA</Id>
+                        <NameNL>Dr. Aspeslagh S.</NameNL>
+                        <NameFR>Dr. Aspeslagh S.</NameFR>
+                        <NameEN>Dr. Aspeslagh S.</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>DWRU</Id>
+                        <NameNL>Dr De Wilde Ruben</NameNL>
+                        <NameFR>Dr De Wilde Ruben</NameFR>
+                        <NameEN>Dr De Wilde Ruben</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+        </Services>
     </Waitingroom>
 </data>

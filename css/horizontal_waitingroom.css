@@ -102,7 +102,7 @@ body {
 }
 
 .content-left {
-    width: 60%;
+    width: 75%;
     padding-left: 60px;
     padding-top: 30px;
     padding-right: 0;
@@ -110,7 +110,7 @@ body {
 }
 
 .content-right {
-    width: 40%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centres content vertically */
@@ -212,7 +212,7 @@ body {
 
 .id {
     display: inline-block;
-    width: 280px; /* Set a fixed width for the ID part */
+    width: 310px; /* Set a fixed width for the ID part */
     text-align: left; /* Aligns the ID to the right inside the fixed width */
 }
 

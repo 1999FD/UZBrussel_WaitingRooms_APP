@@ -28,7 +28,7 @@
                 <Units>
                     <Unit>
                         <Id>FLOW</Id>
-                        <NameNL>Flow - Consultatie Urologie test</NameNL>
+                        <NameNL>Flow - Consultatie Urologie</NameNL>
                         <NameFR>Flow - Consultation Urologie</NameFR>
                         <NameEN>Flow - Consultation Urology</NameEN>
                         <WaitTimeInMinutes>0</WaitTimeInMinutes>
@@ -112,22 +112,7 @@
                         <NameNL>Dr. Vercauteren Charlotte</NameNL>
                         <NameFR>Dr. Vercauteren Charlotte</NameFR>
                         <NameEN>Dr. Vercauteren Charlotte</NameEN>
-                        <WaitTimeInMinutes>10</WaitTimeInMinutes>
-                    </Unit>
-                </Units>
-            </Service>
-            <Service>
-                <Id>sdfsdf</Id>
-                <NameNL>Heelkunde kinderen</NameNL>
-                <NameFR>Chirurgie g�n�ral enfants</NameFR>
-                <NameEN>General surgery children</NameEN>
-                <Units>
-                    <Unit>
-                        <Id>VCCH</Id>
-                        <NameNL>Dr. Vercauteren Charlotte</NameNL>
-                        <NameFR>Dr. Vercauteren Charlotte</NameFR>
-                        <NameEN>Dr. Vercauteren Charlotte</NameEN>
-                        <WaitTimeInMinutes>10</WaitTimeInMinutes>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
                     </Unit>
                 </Units>
             </Service>

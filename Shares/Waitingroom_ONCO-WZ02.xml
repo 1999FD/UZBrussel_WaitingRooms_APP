@@ -4,6 +4,22 @@
         <NameNL>Wachtzaal Borstkliniek</NameNL>
         <NameFR>Wachtzaal Borstkliniek</NameFR>
         <NameEN>Wachtzaal Borstkliniek</NameEN>
-        <Services />
+        <Services>
+            <Service>
+                <Id>CSEN</Id>
+                <NameNL>Senologie</NameNL>
+                <NameFR>Sénologie</NameFR>
+                <NameEN>Senology</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>VHOE</Id>
+                        <NameNL>Dr. Vanhoeij</NameNL>
+                        <NameFR>Dr. Vanhoeij</NameFR>
+                        <NameEN>Dr. Vanhoeij</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+        </Services>
     </Waitingroom>
 </data>

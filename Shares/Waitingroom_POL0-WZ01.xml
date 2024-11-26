@@ -4,6 +4,78 @@
         <NameNL>dermatologie</NameNL>
         <NameFR>dermatologie</NameFR>
         <NameEN>dermatologie</NameEN>
-        <Services />
+        <Services>
+            <Service>
+                <Id>CDER</Id>
+                <NameNL>Dermatologie</NameNL>
+                <NameFR>Dermatologie</NameFR>
+                <NameEN>Dermatology</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>SAJU</Id>
+                        <NameNL>Dr Saerens / GROS - REVA</NameNL>
+                        <NameFR>Dr Saerens / GROS - REVA</NameFR>
+                        <NameEN>Dr Saerens / GROS - REVA</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>VERB</Id>
+                        <NameNL>Verband / Draadjes</NameNL>
+                        <NameFR>Bandage / Sutures</NameFR>
+                        <NameEN>Bandage / Stiches</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>KEJO</Id>
+                        <NameNL>Dr Kessels / GROS - REVA</NameNL>
+                        <NameFR>Dr Kessels / GROS - REVA</NameFR>
+                        <NameEN>Dr Kessels / GROS - REVA</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>SMGI</Id>
+                        <NameNL>Dr. G. Smets</NameNL>
+                        <NameFR>Dr. G. Smets</NameFR>
+                        <NameEN>Dr. G. Smets</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>DIAN</Id>
+                        <NameNL>Diana Studie</NameNL>
+                        <NameFR>Diana Studie</NameFR>
+                        <NameEN>Diana Study</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>ZAAL</Id>
+                        <NameNL>GL-URG-PostH- FU GL URG / GROS - REVA</NameNL>
+                        <NameFR>GL-URG-PostH- FU GL URG / GROS - REVA</NameFR>
+                        <NameEN>GL-URG-PostH- FU GL URG / GROS - REVA</NameEN>
+                        <WaitTimeInMinutes>36</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>DWNI</Id>
+                        <NameNL>Dr Deweer / GROS - REVA</NameNL>
+                        <NameFR>Dr Deweer / GROS - REVA</NameFR>
+                        <NameEN>Dr Deweer / GROS - REVA</NameEN>
+                        <WaitTimeInMinutes>12</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>GRRE</Id>
+                        <NameNL>Prof. Dr. M. Grosber / Dr. V. Reynaert</NameNL>
+                        <NameFR>Prof. Dr. M. Grosber / Dr. V. Reynaert</NameFR>
+                        <NameEN>Prof. Dr. M. Grosber / Dr. V. Reynaert</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>HULI</Id>
+                        <NameNL>Dr Huygen / GROS - REVA</NameNL>
+                        <NameFR>Dr Huygen / GROS - REVA</NameFR>
+                        <NameEN>Dr Huygen / GROS - REVA</NameEN>
+                        <WaitTimeInMinutes>13</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+        </Services>
     </Waitingroom>
 </data>

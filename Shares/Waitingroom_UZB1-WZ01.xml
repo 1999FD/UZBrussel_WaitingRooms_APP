@@ -4,6 +4,66 @@
         <NameNL>Wachtzaal</NameNL>
         <NameFR>Salle d'attente</NameFR>
         <NameEN>Waiting room</NameEN>
-        <Services />
+        <Services>
+            <Service>
+                <Id>CPK</Id>
+                <NameNL>Pijnkliniek</NameNL>
+                <NameFR>Clinique de la douleur</NameFR>
+                <NameEN>Pain clinic</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>NEMC</Id>
+                        <NameNL>NEMA BEHANDELING CERVICAAL</NameNL>
+                        <NameFR>TRAITEMENT NEMA CERVICALE</NameFR>
+                        <NameEN> TREATMENT NEMA CERVICALE</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>CPS1</Id>
+                        <NameNL>Psychologe Mevr. Sablon</NameNL>
+                        <NameFR>Psychologe Mevr. Sablon</NameFR>
+                        <NameEN>Psychologe Mevr. Sablon</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>CHRM</Id>
+                <NameNL>CHRM</NameNL>
+                <NameFR>CHRM</NameFR>
+                <NameEN>CHRM</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>NEUR</Id>
+                        <NameNL>Holter afhalen/terugbrengen</NameNL>
+                        <NameFR>Holter afhalen/terugbrengen</NameFR>
+                        <NameEN>Holter afhalen/terugbrengen</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>CDIA</Id>
+                <NameNL>Diabeteskliniek</NameNL>
+                <NameFR>Clinique du diabète</NameFR>
+                <NameEN>Diabetes centre</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>DIT2</Id>
+                        <NameNL>Diëtiste Glucose Controle</NameNL>
+                        <NameFR>Diëtiste</NameFR>
+                        <NameEN>Dietiste Glucose Controle</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>LIFE</Id>
+                        <NameNL>Consultatie Lifestyle - INDIVIDUEEL</NameNL>
+                        <NameFR>Consultatie Lifestyle</NameFR>
+                        <NameEN>Consultatie Lifestyle</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+        </Services>
     </Waitingroom>
 </data>

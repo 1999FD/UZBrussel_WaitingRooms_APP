@@ -4,6 +4,146 @@
         <NameNL>Kidz Health Castle</NameNL>
         <NameFR>Kidz Health Castle</NameFR>
         <NameEN>Kidz Health Castle</NameEN>
-        <Services />
+        <Services>
+            <Service>
+                <Id>KOFT</Id>
+                <NameNL>Oftalmologie kinderen</NameNL>
+                <NameFR>Ophtalmologie enfants</NameFR>
+                <NameEN>Ophtalmology children</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>ASO</Id>
+                        <NameNL>Assistent</NameNL>
+                        <NameFR>Assistent</NameFR>
+                        <NameEN>Assistent</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>CPCA</Id>
+                        <NameNL>Camille Rogge</NameNL>
+                        <NameFR>Camille Rogge</NameFR>
+                        <NameEN>Camille Rogge</NameEN>
+                        <WaitTimeInMinutes>5</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>NPEV</Id>
+                        <NameNL>Evi Verdonck</NameNL>
+                        <NameFR>Evi Verdonck</NameFR>
+                        <NameEN>Evi Verdonck</NameEN>
+                        <WaitTimeInMinutes>5</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>KAN</Id>
+                <NameNL>Anesthesie kinderen</NameNL>
+                <NameFR>Anesthésie enfants</NameFR>
+                <NameEN>Anesthesia children</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>ANES</Id>
+                        <NameNL>Cons. Anesthesie Kinderen</NameNL>
+                        <NameFR>Cons. Anesthésie Enfant</NameFR>
+                        <NameEN>Cons. Anaesthesiology Child</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>KKNO</Id>
+                <NameNL>KNO kinderen</NameNL>
+                <NameFR>O.R.L. enfants</NameFR>
+                <NameEN>E.N.T. children</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>KD01</Id>
+                        <NameNL>Dr. Kathleen David</NameNL>
+                        <NameFR>Dr. Kathleen David</NameFR>
+                        <NameEN>Dr. Kathleen David</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>KD02</Id>
+                        <NameNL>Dr. Kathleen David</NameNL>
+                        <NameFR>Dr. Kathleen David</NameFR>
+                        <NameEN>Dr. Kathleen David</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>KGAS</Id>
+                <NameNL>Gastro-enterologie kinderen</NameNL>
+                <NameFR>Gastro-entérologie enfants</NameFR>
+                <NameEN>Gastroenterology children</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>VDPL</Id>
+                        <NameNL>Prof. Dr. Yvan Vandenplas</NameNL>
+                        <NameFR>Prof. Dr. Yvan Vandenplas</NameFR>
+                        <NameEN>Prof. Dr. Yvan Vandenplas</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>HAUS</Id>
+                        <NameNL>Prof. Dr. B. Hauser</NameNL>
+                        <NameFR>Prof. Dr. B. Hauser</NameFR>
+                        <NameEN>Prof. Dr. B. Hauser</NameEN>
+                        <WaitTimeInMinutes>10</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>FELL</Id>
+                        <NameNL>FELLOW/Gastro- Enterologie</NameNL>
+                        <NameFR>FELLOW/Gastro- Enterologie</NameFR>
+                        <NameEN>FELLOW/Gastro- Enterologie</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>KEND</Id>
+                <NameNL>Endocrinologie kinderen</NameNL>
+                <NameFR>Endocrinologie enfants</NameFR>
+                <NameEN>Endocrinology children</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>DIA2</Id>
+                        <NameNL>Dr. Jesse Vanbesien</NameNL>
+                        <NameFR>Dr. Jesse Vanbesien</NameFR>
+                        <NameEN>Dr. Jesse Vanbesien</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>END4</Id>
+                        <NameNL>Prof. Inge Gies - consultatie endocrinologie kinde</NameNL>
+                        <NameFR>Prof. Inge Gies - consultation endocrinologie kind</NameFR>
+                        <NameEN>Prof. Inge Gies - consultation endocrinology kinde</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>ETS2</Id>
+                        <NameNL>Louise Van Hecke/diététicienne Eetstoornissen</NameNL>
+                        <NameFR>Louise Van Hecke/dietician Troubles alimentaires</NameFR>
+                        <NameEN>Louise Van Hecke/dietiste Eatingdisorders</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>KPNE</Id>
+                <NameNL>Pneumologie kinderen</NameNL>
+                <NameFR>Maladies pulmonaires enfants</NameFR>
+                <NameEN>Pneumonology Children</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>LFO4</Id>
+                        <NameNL>Longfunctie</NameNL>
+                        <NameFR>La fonction pulmonaire</NameFR>
+                        <NameEN>Lung function</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+        </Services>
     </Waitingroom>
 </data>

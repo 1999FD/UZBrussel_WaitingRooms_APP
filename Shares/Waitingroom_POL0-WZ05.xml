@@ -4,6 +4,51 @@
         <NameNL>Endoscopie/Proctologie</NameNL>
         <NameFR>Endoscopie/Proctologie</NameFR>
         <NameEN>Endoscopy/Proctology</NameEN>
-        <Services />
+        <Services>
+            <Service>
+                <Id>CPRO</Id>
+                <NameNL>Proctologie</NameNL>
+                <NameFR>Proctologie</NameFR>
+                <NameEN>Proctology</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>FECR</Id>
+                        <NameNL> </NameNL>
+                        <NameFR> </NameFR>
+                        <NameEN> </NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>IGAS</Id>
+                <NameNL>Endoscopie eenheid</NameNL>
+                <NameFR>Unité Endoscopy</NameFR>
+                <NameEN>Endoscopy unit</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>03</Id>
+                        <NameNL>Zaal 3 (Nieuwe eenheid)</NameNL>
+                        <NameFR>Zaal 3 (Nieuwe eenheid)</NameFR>
+                        <NameEN>Zaal 3 (Nieuwe eenheid)</NameEN>
+                        <WaitTimeInMinutes>349</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>01</Id>
+                        <NameNL>Zaal 1 (Nieuwe eenheid)</NameNL>
+                        <NameFR>Zaal 1 (Nieuwe eenheid)</NameFR>
+                        <NameEN>Zaal 1 (Nieuwe eenheid)</NameEN>
+                        <WaitTimeInMinutes>349</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>02</Id>
+                        <NameNL>Zaal 2 (Nieuwe eenheid)</NameNL>
+                        <NameFR>Zaal 2 (Nieuwe eenheid)</NameFR>
+                        <NameEN>Zaal 2 (Nieuwe eenheid)</NameEN>
+                        <WaitTimeInMinutes>379</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+        </Services>
     </Waitingroom>
 </data>

@@ -4,6 +4,22 @@
         <NameNL>Wachtzaal Lymfekliniek</NameNL>
         <NameFR>Wachtzaal Lymfekliniek</NameFR>
         <NameEN>Wachtzaal Lymfekliniek</NameEN>
-        <Services />
+        <Services>
+            <Service>
+                <Id>CPLA</Id>
+                <NameNL>Plastische heelkunde</NameNL>
+                <NameFR>Chirurgie plastique</NameFR>
+                <NameEN>Plastic Surgery</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>HASO</Id>
+                        <NameNL>PROF. HAMDI MOUSTAPHA</NameNL>
+                        <NameFR>PROF. HAMDI MOUSTAPHA</NameFR>
+                        <NameEN>PROF. HAMDI MOUSTAPHA</NameEN>
+                        <WaitTimeInMinutes>20</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+        </Services>
     </Waitingroom>
 </data>

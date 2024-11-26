@@ -12,18 +12,144 @@
                 <NameEN>Brussels IVF</NameEN>
                 <Units>
                     <Unit>
-                        <Id>PL8</Id>
-                        <NameNL>Plan donor UZ Brussel</NameNL>
-                        <NameFR>Plan donor UZ Brussel</NameFR>
-                        <NameEN>Plan Donor Uzb</NameEN>
+                        <Id>TCMB</Id>
+                        <NameNL>Telefonische consultatie DR. MICHAEL DE BRUCKER</NameNL>
+                        <NameFR>Rendez-vous téléphonique DR. MICHAEL DE BRUCKER</NameFR>
+                        <NameEN>Telephonic appointment DR. MICHAEL DE BRUCKER</NameEN>
                         <WaitTimeInMinutes>0</WaitTimeInMinutes>
                     </Unit>
                     <Unit>
-                        <Id>PL2</Id>
-                        <NameNL>IVF-ICSI PRIOR 2</NameNL>
-                        <NameFR>IVF-ICSI PRIOR 2</NameFR>
-                        <NameEN>IVF-ICSI PRIOR 2</NameEN>
+                        <Id>COU4</Id>
+                        <NameNL>Counselor</NameNL>
+                        <NameFR>Counselor</NameFR>
+                        <NameEN>Counselor</NameEN>
                         <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>COU5</Id>
+                        <NameNL>Counselor</NameNL>
+                        <NameFR>Counselor</NameFR>
+                        <NameEN>Counselor</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>JUL1</Id>
+                        <NameNL>Psy Julie Nekkebroeck</NameNL>
+                        <NameFR>Psy Julie Nekkebroeck</NameFR>
+                        <NameEN>Psy Julie Nekkebroeck</NameEN>
+                        <WaitTimeInMinutes>27</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>COU6</Id>
+                        <NameNL>Counselor</NameNL>
+                        <NameFR>Counselor</NameFR>
+                        <NameEN>Counselor</NameEN>
+                        <WaitTimeInMinutes>44</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>COU7</Id>
+                        <NameNL>Counselor</NameNL>
+                        <NameFR>Counselor</NameFR>
+                        <NameEN>Counselor</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>COU8</Id>
+                        <NameNL>Counselor</NameNL>
+                        <NameFR>Counselor</NameFR>
+                        <NameEN>Counselor</NameEN>
+                        <WaitTimeInMinutes>44</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>URGC</Id>
+                        <NameNL>Counselor</NameNL>
+                        <NameFR>Counselor</NameFR>
+                        <NameEN>Counselor</NameEN>
+                        <WaitTimeInMinutes>44</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>EPRE</Id>
+                        <NameNL>ECHOGRAFIE</NameNL>
+                        <NameFR>ÉCHOGRAPHIE</NameFR>
+                        <NameEN>ULTRASOUND</NameEN>
+                        <WaitTimeInMinutes>389</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>IVM</Id>
+                        <NameNL>Counseling</NameNL>
+                        <NameFR>Counseling</NameFR>
+                        <NameEN>Counseling</NameEN>
+                        <WaitTimeInMinutes>329</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>EZWS</Id>
+                        <NameNL>ECHOGRAFIE</NameNL>
+                        <NameFR>ÉCHOGRAPHIE</NameFR>
+                        <NameEN>ULTRASOUND</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>COU1</Id>
+                        <NameNL>Counselor</NameNL>
+                        <NameFR>Counselor</NameFR>
+                        <NameEN>Counselor</NameEN>
+                        <WaitTimeInMinutes>269</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>COU2</Id>
+                        <NameNL>Counselor</NameNL>
+                        <NameFR>Counselor</NameFR>
+                        <NameEN>Counselor</NameEN>
+                        <WaitTimeInMinutes>389</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>COU3</Id>
+                        <NameNL>Counselor</NameNL>
+                        <NameFR>Counselor</NameFR>
+                        <NameEN>Counselor</NameEN>
+                        <WaitTimeInMinutes>44</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>URGP</Id>
+                        <NameNL>psycholoog</NameNL>
+                        <NameFR>psycholoog</NameFR>
+                        <NameEN>psycholoog</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>CO10</Id>
+                        <NameNL>Counselor</NameNL>
+                        <NameFR>Counselor</NameFR>
+                        <NameEN>Counselor</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>MDV</Id>
+                        <NameNL>Prof. Dr. Michel De Vos</NameNL>
+                        <NameFR>Prof. Dr. Michel De Vos</NameFR>
+                        <NameEN>Prof. Dr. Michel De Vos</NameEN>
+                        <WaitTimeInMinutes>29</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>SHDR</Id>
+                        <NameNL>Dr. Sophie Hendrickx</NameNL>
+                        <NameFR>Dr. Sophie Hendrickx</NameFR>
+                        <NameEN>Dr. Sophie Hendrickx</NameEN>
+                        <WaitTimeInMinutes>29</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>LIZ1</Id>
+                        <NameNL>Psy Leunens Lize</NameNL>
+                        <NameFR>Psy Leunens Lize</NameFR>
+                        <NameEN>Psy Leunens Lize</NameEN>
+                        <WaitTimeInMinutes>14</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>EFOL</Id>
+                        <NameNL>ECHOGRAFIE</NameNL>
+                        <NameFR>ÉCHOGRAPHIE</NameFR>
+                        <NameEN>ULTRASOUND</NameEN>
+                        <WaitTimeInMinutes>329</WaitTimeInMinutes>
                     </Unit>
                 </Units>
             </Service>

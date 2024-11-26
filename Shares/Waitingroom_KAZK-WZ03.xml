@@ -4,6 +4,79 @@
         <NameNL>Wachtzaal PAIKA</NameNL>
         <NameFR>Wachtzaal PAIKA</NameFR>
         <NameEN>Wachtzaal PAIKA</NameEN>
-        <Services />
+        <Services>
+            <Service>
+                <Id>RRCA</Id>
+                <NameNL>Referentiecentrum autisme</NameNL>
+                <NameFR>Referentiecentrum autisme</NameFR>
+                <NameEN>Referentiecentrum autisme</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>AVDW</Id>
+                        <NameNL>A. Van De Woestyne</NameNL>
+                        <NameFR>A. Van De Woestyne</NameFR>
+                        <NameEN>A. Van De Woestyne</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>KPSY</Id>
+                <NameNL>Psychiatrie kinderen</NameNL>
+                <NameFR>Psychiatrie enfants</NameFR>
+                <NameEN>Psychiatry children</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>VAFR</Id>
+                        <NameNL>K. Vanfraussen</NameNL>
+                        <NameFR>K. Vanfraussen</NameFR>
+                        <NameEN>K. Vanfraussen</NameEN>
+                        <WaitTimeInMinutes>226</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>VDEE</Id>
+                        <NameNL>U. Van Den Eede</NameNL>
+                        <NameFR>U. Van Den Eede</NameFR>
+                        <NameEN>U. Van Den Eede</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>EGEU</Id>
+                        <NameNL>E. Geudens</NameNL>
+                        <NameFR>E. Geudens</NameFR>
+                        <NameEN>E. Geudens</NameEN>
+                        <WaitTimeInMinutes>46</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>IVER</Id>
+                        <NameNL>I. Vermaut</NameNL>
+                        <NameFR>I. Vermaut</NameFR>
+                        <NameEN>I. Vermaut</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>LCOR</Id>
+                        <NameNL>Dr. L. Cornelis</NameNL>
+                        <NameFR>Dr. L. Cornelis</NameFR>
+                        <NameEN>Dr. L. Cornelis</NameEN>
+                        <WaitTimeInMinutes>46</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>WGOD</Id>
+                        <NameNL>W. Godsdeel</NameNL>
+                        <NameFR>W. Godsdeel</NameFR>
+                        <NameEN>W. Godsdeel</NameEN>
+                        <WaitTimeInMinutes>38</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>CMER</Id>
+                        <NameNL>Dr. C. Mertens</NameNL>
+                        <NameFR>Dr. C. Mertens</NameFR>
+                        <NameEN>Dr. C. Mertens</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+        </Services>
     </Waitingroom>
 </data>

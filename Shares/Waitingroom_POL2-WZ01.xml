@@ -6,6 +6,28 @@
         <NameEN>Endocrino / plast. surgery. / diet department</NameEN>
         <Services>
             <Service>
+                <Id>CPK</Id>
+                <NameNL>Pijnkliniek</NameNL>
+                <NameFR>Clinique de la douleur</NameFR>
+                <NameEN>Pain clinic</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>CON2</Id>
+                        <NameNL>Raadpleging Dr. Truong</NameNL>
+                        <NameFR>Raadpleging Dr. Truong</NameFR>
+                        <NameEN>Raadpleging Dr. Truong</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>CPS1</Id>
+                        <NameNL>Psychologe Mevr. Sablon</NameNL>
+                        <NameFR>Psychologe Mevr. Sablon</NameFR>
+                        <NameEN>Psychologe Mevr. Sablon</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
                 <Id>CEND</Id>
                 <NameNL>Endocrinologie</NameNL>
                 <NameFR>Endocrinologie</NameFR>
@@ -16,13 +38,43 @@
                         <NameNL>Dr. Balti</NameNL>
                         <NameFR>Dr. Balti</NameFR>
                         <NameEN>Dr. Balti</NameEN>
-                        <WaitTimeInMinutes>14</WaitTimeInMinutes>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
                     </Unit>
                     <Unit>
-                        <Id>ANC1</Id>
-                        <NameNL>Prof. Dr. Andreescu</NameNL>
-                        <NameFR>Prof. Dr. Andreescu</NameFR>
-                        <NameEN>Prof. Dr. Andreescu</NameEN>
+                        <Id>GOEL</Id>
+                        <NameNL>Diëtiste Mevr. Ellen Goris</NameNL>
+                        <NameFR>Diéteticien Mme. Ellen Goris</NameFR>
+                        <NameEN>Dietitian Mrs. Ellen Goris</NameEN>
+                        <WaitTimeInMinutes>41</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>CABD</Id>
+                <NameNL>Abdominale heelkunde</NameNL>
+                <NameFR>Chirurgie abdominale</NameFR>
+                <NameEN>Abdominal surgery</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>JAWA</Id>
+                        <NameNL>Dr. Janssens</NameNL>
+                        <NameFR>Dr. Janssens</NameFR>
+                        <NameEN>Dr. Janssens</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>CWON</Id>
+                <NameNL>Wondkliniek</NameNL>
+                <NameFR>Clinique de plaie</NameFR>
+                <NameEN>Wound clinic</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>WZOR</Id>
+                        <NameNL>Wondzorg</NameNL>
+                        <NameFR>Les soins des plaies</NameFR>
+                        <NameEN>wound care</NameEN>
                         <WaitTimeInMinutes>0</WaitTimeInMinutes>
                     </Unit>
                 </Units>

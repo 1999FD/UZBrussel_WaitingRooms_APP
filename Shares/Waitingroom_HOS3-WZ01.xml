@@ -4,6 +4,50 @@
         <NameNL>Slaaplabo</NameNL>
         <NameFR>Slaaplabo</NameFR>
         <NameEN>Slaaplabo</NameEN>
-        <Services />
+        <Services>
+            <Service>
+                <Id>C380</Id>
+                <NameNL>Slaaplabo</NameNL>
+                <NameFR>Labo du sommeil</NameFR>
+                <NameEN>Sleep lab</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>SINV</Id>
+                        <NameNL>Mevr. Nigitha Van Doorn</NameNL>
+                        <NameFR>Mme. Nigitha Van Doorn</NameFR>
+                        <NameEN>Mrs. Nigitha Van Doorn</NameEN>
+                        <WaitTimeInMinutes>90</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>INTE</Id>
+                        <NameNL> </NameNL>
+                        <NameFR> </NameFR>
+                        <NameEN> </NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>BOX1</Id>
+                        <NameNL>Consultatie - Box 1</NameNL>
+                        <NameFR>Consultation - Box 1</NameFR>
+                        <NameEN>Consultation - Box 1</NameEN>
+                        <WaitTimeInMinutes>16</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>SIBD</Id>
+                        <NameNL>Mevr. Berenice Delwiche</NameNL>
+                        <NameFR>Mme.Berenice Delwiche</NameFR>
+                        <NameEN>Mrs. Berenice Delwiche</NameEN>
+                        <WaitTimeInMinutes>5</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>BOX2</Id>
+                        <NameNL>Consultatie - Box 2</NameNL>
+                        <NameFR>Consultation - Box 2</NameFR>
+                        <NameEN>Consultation - Box 2</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+        </Services>
     </Waitingroom>
 </data>

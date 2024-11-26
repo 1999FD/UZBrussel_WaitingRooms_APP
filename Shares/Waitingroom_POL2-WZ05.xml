@@ -4,6 +4,22 @@
         <NameNL>Wachtzaal Pijnkliniek</NameNL>
         <NameFR>Wachtzaal Pijnkliniek</NameFR>
         <NameEN>Wachtzaal Pijnkliniek</NameEN>
-        <Services />
+        <Services>
+            <Service>
+                <Id>CPK</Id>
+                <NameNL>Pijnkliniek</NameNL>
+                <NameFR>Clinique de la douleur</NameFR>
+                <NameEN>Pain clinic</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>QUT</Id>
+                        <NameNL>Behandeling Qutenza</NameNL>
+                        <NameFR>Traitement Qutenza</NameFR>
+                        <NameEN>Treatment Qutenza</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+        </Services>
     </Waitingroom>
 </data>

@@ -4,6 +4,22 @@
         <NameNL>Wachtzaal Anesthesie</NameNL>
         <NameFR>Wachtzaal Anesthesie</NameFR>
         <NameEN>Wachtzaal Anesthesie</NameEN>
-        <Services />
+        <Services>
+            <Service>
+                <Id>CAN</Id>
+                <NameNL>Anesthesie</NameNL>
+                <NameFR>Anesthesiologie</NameFR>
+                <NameEN>Anaestesiology</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>ANES</Id>
+                        <NameNL>Consultatie anesthesie</NameNL>
+                        <NameFR>Consultation anesthésie</NameFR>
+                        <NameEN>Consultation anesthesia</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+        </Services>
     </Waitingroom>
 </data>

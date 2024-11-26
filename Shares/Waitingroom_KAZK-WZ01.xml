@@ -4,6 +4,278 @@
         <NameNL>Kidz Health Castle</NameNL>
         <NameFR>Kidz Health Castle</NameFR>
         <NameEN>Kidz Health Castle</NameEN>
-        <Services />
+        <Services>
+            <Service>
+                <Id>KPED</Id>
+                <NameNL>Pediatrie</NameNL>
+                <NameFR>Pédiatrie</NameFR>
+                <NameEN>Paediatrics</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>CASA</Id>
+                        <NameNL>Dr. Ann Casteels/alg. pediatrie</NameNL>
+                        <NameFR>Dr. Ann Casteels/pédiatrie génerale</NameFR>
+                        <NameEN>Dr. Ann Casteels/general pediatrics</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>MARJ</Id>
+                        <NameNL>Dr. Marjolein Willemsen</NameNL>
+                        <NameFR>Dr. Marjolein Willemsen</NameFR>
+                        <NameEN>Dr. Marjolein Willemsen</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>KDER</Id>
+                <NameNL>Dermatologie kinderen</NameNL>
+                <NameFR>Dermatologie enfants</NameFR>
+                <NameEN>Dermatology children</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>SMEK</Id>
+                        <NameNL>Prof. Dr. Katrien Smets</NameNL>
+                        <NameFR>Prof. Dr. Katrien Smets</NameFR>
+                        <NameEN>Prof. Dr. Katrien Smets</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>KNEO</Id>
+                <NameNL>Consultatie Neonatologie</NameNL>
+                <NameFR>Consultation Néonatologie</NameFR>
+                <NameEN>Consultation Neonatology</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>SONN</Id>
+                        <NameNL>Dr. Michel Sonnaert/neonatale</NameNL>
+                        <NameFR>Dr. Michel Sonnaert/néonatale</NameFR>
+                        <NameEN>Dr. Michel Sonnaert/neonatal</NameEN>
+                        <WaitTimeInMinutes>30</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>KKNO</Id>
+                <NameNL>KNO kinderen</NameNL>
+                <NameFR>O.R.L. enfants</NameFR>
+                <NameEN>E.N.T. children</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>KD01</Id>
+                        <NameNL>Dr. Kathleen David</NameNL>
+                        <NameFR>Dr. Kathleen David</NameFR>
+                        <NameEN>Dr. Kathleen David</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>KD02</Id>
+                        <NameNL>Dr. Kathleen David</NameNL>
+                        <NameFR>Dr. Kathleen David</NameFR>
+                        <NameEN>Dr. Kathleen David</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>LKLN</Id>
+                <NameNL>COS+</NameNL>
+                <NameFR>COS+</NameFR>
+                <NameEN>COS+</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>VDDI</Id>
+                        <NameNL>Vandendorpe Inès, Psychologe</NameNL>
+                        <NameFR>Vandendorpe Inès, Psychologe</NameFR>
+                        <NameEN>Vandendorpe Inès, Psychologe</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>KGAS</Id>
+                <NameNL>Gastro-enterologie kinderen</NameNL>
+                <NameFR>Gastro-entérologie enfants</NameFR>
+                <NameEN>Gastroenterology children</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>HUK2</Id>
+                        <NameNL>Prof. Dr. K. Huysentruyt</NameNL>
+                        <NameFR>Prof. Dr. K. Huysentruyt</NameFR>
+                        <NameEN>Prof. Dr. K. Huysentruyt</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>KEND</Id>
+                <NameNL>Endocrinologie kinderen</NameNL>
+                <NameFR>Endocrinologie enfants</NameFR>
+                <NameEN>Endocrinology children</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>END4</Id>
+                        <NameNL>Prof. Inge Gies - consultatie endocrinologie kinde</NameNL>
+                        <NameFR>Prof. Inge Gies - consultation endocrinologie kind</NameFR>
+                        <NameEN>Prof. Inge Gies - consultation endocrinology kinde</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>ETS2</Id>
+                        <NameNL>Louise Van Hecke/diététicienne Eetstoornissen</NameNL>
+                        <NameFR>Louise Van Hecke/dietician Troubles alimentaires</NameFR>
+                        <NameEN>Louise Van Hecke/dietiste Eatingdisorders</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>KPLA</Id>
+                <NameNL>Plastische heelkunde kinderen</NameNL>
+                <NameFR>Chirurgie plastique enfants</NameFR>
+                <NameEN>Plastic Surgery children</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>SCHO</Id>
+                        <NameNL>Prof. Dr. Schols Rutger</NameNL>
+                        <NameFR>Prof. Dr. Schols Rutger</NameFR>
+                        <NameEN>Prof. Dr. Schols Rutger</NameEN>
+                        <WaitTimeInMinutes>10</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>RRCA</Id>
+                <NameNL>Referentiecentrum autisme</NameNL>
+                <NameFR>Referentiecentrum autisme</NameFR>
+                <NameEN>Referentiecentrum autisme</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>XCOL</Id>
+                        <NameNL>X. Colpaert</NameNL>
+                        <NameFR>X. Colpaert</NameFR>
+                        <NameEN>X. Colpaert</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>KREU</Id>
+                <NameNL>Reumatologie kinderen</NameNL>
+                <NameFR>Rhumatologie enfants</NameFR>
+                <NameEN>Rheumatology children</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>OGBE</Id>
+                        <NameNL> Dr. Benson Ogunjimi</NameNL>
+                        <NameFR> Dr. Benson Ogunjimi</NameFR>
+                        <NameEN> Dr. Benson Ogunjimi</NameEN>
+                        <WaitTimeInMinutes>2</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>KPNE</Id>
+                <NameNL>Pneumologie kinderen</NameNL>
+                <NameFR>Maladies pulmonaires enfants</NameFR>
+                <NameEN>Pneumonology Children</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>FELL</Id>
+                        <NameNL> FELLOW/Kinderpneumologie</NameNL>
+                        <NameFR> FELLOW/Kinderpneumologie</NameFR>
+                        <NameEN> FELLOW/Kinderpneumologie</NameEN>
+                        <WaitTimeInMinutes>240</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>HTST</Id>
+                        <NameNL>Huidtesten</NameNL>
+                        <NameFR>Tests cutanés</NameFR>
+                        <NameEN>Skin tests</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>KNEU</Id>
+                <NameNL>Neurologie kinderen</NameNL>
+                <NameFR>Neurologie enfants</NameFR>
+                <NameEN>Neurology children</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>TWAS</Id>
+                        <NameNL>Prof. Dr. T. Wassenberg, neurologie</NameNL>
+                        <NameFR>Prof. Dr. T. Wassenberg, neurologie</NameFR>
+                        <NameEN>Prof. Dr. T. Wassenberg, neurologie</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>SPIJ</Id>
+                        <NameNL>Dr. S. Pijpen, Neurologie</NameNL>
+                        <NameFR>Dr. S. Pijpen, Neurologie</NameFR>
+                        <NameEN>Dr. S. Pijpen, Neurologie</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>BAMA</Id>
+                        <NameNL> Dr. B. Aman, Neurologie</NameNL>
+                        <NameFR> Dr. B. Aman, Neurologie</NameFR>
+                        <NameEN> Dr. B. Aman, Neurologie</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>EGRE</Id>
+                        <NameNL>E. Greeve, Psychologe</NameNL>
+                        <NameFR>E. Greeve, Psychologue</NameFR>
+                        <NameEN>E. Greeve, Psychologist</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>DHAR</Id>
+                        <NameNL>Dr. D. Hasaerts, Neurologie</NameNL>
+                        <NameFR>Dr. D. Hasaerts, Neurologie</NameFR>
+                        <NameEN>Dr. D. Hasaerts, Neurologie</NameEN>
+                        <WaitTimeInMinutes>8</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>HFRA</Id>
+                        <NameNL>Dr. H. Franckx, Neurologie</NameNL>
+                        <NameFR>Dr. H. Franckx, Neurologie</NameFR>
+                        <NameEN>Dr. H. Franckx, Neurologie</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>LSEY</Id>
+                        <NameNL> Dr. L. Seynaeve, Neurologie</NameNL>
+                        <NameFR> Dr. L. Seynaeve, Neurologie</NameFR>
+                        <NameEN> Dr. L. Seynaeve, Neurologie</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>MECK</Id>
+                        <NameNL>M. Ecker, Psychologe</NameNL>
+                        <NameFR>M. Ecker, Psychologe</NameFR>
+                        <NameEN>M. Ecker</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>ESRA</Id>
+                        <NameNL>E. Cetinkaya, logopediste</NameNL>
+                        <NameFR>E. Cetinkaya, logopède</NameFR>
+                        <NameEN>E. Cetinkaya</NameEN>
+                        <WaitTimeInMinutes>24</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>KDEL</Id>
+                        <NameNL>K. De Langhe, Kinesitherapeute</NameNL>
+                        <NameFR>K. De Langhe, Kinésitherapeute</NameFR>
+                        <NameEN>K. De Langhe</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+        </Services>
     </Waitingroom>
 </data>
