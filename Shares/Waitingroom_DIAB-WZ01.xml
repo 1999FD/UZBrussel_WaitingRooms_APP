@@ -6,42 +6,6 @@
         <NameEN>Diabetes clinic</NameEN>
         <Services>
             <Service>
-                <Id>CVOT</Id>
-                <NameNL>Diabeteskliniek</NameNL>
-                <NameFR>Clinique du diabète</NameFR>
-                <NameEN>Diabetes centre</NameEN>
-                <Units>
-                    <Unit>
-                        <Id>POKW</Id>
-                        <NameNL>Podoloog Kjenta Weverbergh</NameNL>
-                        <NameFR>Podoloog Kjenta Weverbergh</NameFR>
-                        <NameEN>Podoloog Kjenta Weverbergh</NameEN>
-                        <WaitTimeInMinutes>21</WaitTimeInMinutes>
-                    </Unit>
-                    <Unit>
-                        <Id>POIV</Id>
-                        <NameNL>Podoloog Ineke Van Hemelrijk</NameNL>
-                        <NameFR>Podoloog Ineke Van Hemelrijk</NameFR>
-                        <NameEN>Podoloog Ineke Van Hemelrijk</NameEN>
-                        <WaitTimeInMinutes>20</WaitTimeInMinutes>
-                    </Unit>
-                    <Unit>
-                        <Id>POMH</Id>
-                        <NameNL>Podoloog Miek Helpers</NameNL>
-                        <NameFR>Podoloog Miek Helpers</NameFR>
-                        <NameEN>Podoloog Miek Helpers</NameEN>
-                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
-                    </Unit>
-                    <Unit>
-                        <Id>POSM</Id>
-                        <NameNL>Podoloog Sofie Muylaert</NameNL>
-                        <NameFR>Podologue Sofie Muylaert</NameFR>
-                        <NameEN> </NameEN>
-                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
-                    </Unit>
-                </Units>
-            </Service>
-            <Service>
                 <Id>CEND</Id>
                 <NameNL>Endocrinologie</NameNL>
                 <NameFR>Endocrinologie</NameFR>
@@ -64,7 +28,7 @@
                 <Units>
                     <Unit>
                         <Id>KAM3</Id>
-                        <NameNL>Dr. A. Kharagjitsing</NameNL>
+                        <NameNL>Diabeteseducator Glucose Controle Type 1 partiënten</NameNL>
                         <NameFR>Dr. A. Kharagjitsing</NameFR>
                         <NameEN>Dr. A. Kharagjitsing</NameEN>
                         <WaitTimeInMinutes>0</WaitTimeInMinutes>
@@ -159,34 +123,6 @@
                         <NameFR> </NameFR>
                         <NameEN> </NameEN>
                         <WaitTimeInMinutes>0</WaitTimeInMinutes>
-                    </Unit>
-                    <Unit>
-                        <Id>BKM2</Id>
-                        <NameNL>Prof. Dr. B. Keymeulen</NameNL>
-                        <NameFR>Prof. Dr. B. Keymeulen</NameFR>
-                        <NameEN>Prof. Dr. B. Keymeulen</NameEN>
-                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
-                    </Unit>
-                    <Unit>
-                        <Id>BKM3</Id>
-                        <NameNL>Prof. Dr. B. Keymeulen</NameNL>
-                        <NameFR>Prof. Dr. B. Keymeulen</NameFR>
-                        <NameEN>Prof. Dr. B. Keymeulen</NameEN>
-                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
-                    </Unit>
-                    <Unit>
-                        <Id>BKM4</Id>
-                        <NameNL>Prof. Dr. B. Keymeulen</NameNL>
-                        <NameFR>Prof. Dr. B. Keymeulen</NameFR>
-                        <NameEN>Prof. Dr. B. Keymeulen</NameEN>
-                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
-                    </Unit>
-                    <Unit>
-                        <Id>BKM5</Id>
-                        <NameNL>Prof. Dr. B. Keymeulen</NameNL>
-                        <NameFR>Prof. Dr. B. Keymeulen</NameFR>
-                        <NameEN>Prof. Dr. B. Keymeulen</NameEN>
-                        <WaitTimeInMinutes>25</WaitTimeInMinutes>
                     </Unit>
                 </Units>
             </Service>

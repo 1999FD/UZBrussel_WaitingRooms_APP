@@ -39,6 +39,76 @@
                         <NameEN>Consultation ASO Geriatrics</NameEN>
                         <WaitTimeInMinutes>0</WaitTimeInMinutes>
                     </Unit>
+                    <Unit>
+                        <Id>ASO1</Id>
+                        <NameNL>Consultatie ASO Geriatrie</NameNL>
+                        <NameFR>Consultation ASO Geriatrie</NameFR>
+                        <NameEN>Consultation ASO Geriatrics</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>ASO2</Id>
+                        <NameNL>Consultatie ASO Geriatrie</NameNL>
+                        <NameFR>Consultation ASO Geriatrie</NameFR>
+                        <NameEN>Consultation ASO Geriatrics</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>ASO3</Id>
+                        <NameNL>Consultatie ASO Geriatrie</NameNL>
+                        <NameFR>Consultation ASO Geriatrie</NameFR>
+                        <NameEN>Consultation ASO Geriatrics</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>ASO4</Id>
+                        <NameNL>Consultatie ASO Geriatrie</NameNL>
+                        <NameFR>Consultation ASO Geriatrie</NameFR>
+                        <NameEN>Consultation ASO Geriatrics</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>ASO5</Id>
+                        <NameNL>Consultatie ASO Geriatrie</NameNL>
+                        <NameFR>Consultation ASO Geriatrie</NameFR>
+                        <NameEN>Consultation ASO Geriatrics</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>ASO5</Id>
+                        <NameNL>Consultatie ASO Geriatrie</NameNL>
+                        <NameFR>Consultation ASO Geriatrie</NameFR>
+                        <NameEN>Consultation ASO Geriatrics</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>ASO5</Id>
+                        <NameNL>Consultatie ASO Geriatrie</NameNL>
+                        <NameFR>Consultation ASO Geriatrie</NameFR>
+                        <NameEN>Consultation ASO Geriatrics</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>ASO6</Id>
+                        <NameNL>Consultatie ASO Geriatrie</NameNL>
+                        <NameFR>Consultation ASO Geriatrie</NameFR>
+                        <NameEN>Consultation ASO Geriatrics</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>ASO7</Id>
+                        <NameNL>Consultatie ASO Geriatrie</NameNL>
+                        <NameFR>Consultation ASO Geriatrie</NameFR>
+                        <NameEN>Consultation ASO Geriatrics</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>ASO8</Id>
+                        <NameNL>Consultatie ASO Geriatrie</NameNL>
+                        <NameFR>Consultation ASO Geriatrie</NameFR>
+                        <NameEN>Consultation ASO Geriatrics</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
                 </Units>
             </Service>
         </Services>

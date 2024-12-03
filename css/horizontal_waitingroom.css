@@ -104,7 +104,7 @@ body {
 .content-left {
     width: 75%;
     padding-left: 60px;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-right: 0;
     padding-bottom: 0;
 }
@@ -206,7 +206,7 @@ body {
 
 .unit {
     display: flex;
-    align-items: baseline; /* Ensure text aligns properly */
+    align-items: center; /* Ensure text aligns properly */
     font-size: 3rem; /* Font size for unit text */
 }
 
@@ -214,12 +214,14 @@ body {
     display: inline-block;
     width: 310px; /* Set a fixed width for the ID part */
     text-align: left; /* Aligns the ID to the right inside the fixed width */
+    height: 100%;
 }
 
 .name {
     display: inline-block;
     text-align: left; /* Ensures the name text aligns to the left */
     flex-grow: 1; /* Allows it to take up remaining space */
+    width: 940px;
 }
 
 

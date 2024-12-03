@@ -7,6 +7,10 @@
     },
     "LAN1-GER": {
         "1": {
+            "displayName": "Geriatrie",
+            "orientationName": "vertical"
+        },
+        "2": {
             "displayName": "Display Name",
             "orientationName": "horizontal"
         }
