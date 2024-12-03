@@ -104,7 +104,7 @@ body {
 .content-left {
     width: 75%;
     padding-left: 60px;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-right: 0;
     padding-bottom: 0;
 }
@@ -114,8 +114,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centres content vertically */
-    align-items: center; /* Centres content horizontally */
-    text-align: center; /* Centres text within each element */
+    align-items: left; /* Centres content horizontally */
+    text-align: left; /* Centres text within each element */
     box-sizing: border-box; /* Ensures padding does not affect width */
     height: 100%; /* Takes the full height of the container */
 }
@@ -141,14 +141,14 @@ body {
 .legend {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers the entire content horizontally */
+    align-items: left; /* Centers the entire content horizontally */
     text-align: left; /* Aligns the text to the left of each icon */
 }
 
 .legend h3 {
     font-size: 2.5rem;
     margin-bottom: 15px;
-    text-align: center; /* Center aligns the heading */
+    text-align: left; /* Center aligns the heading */
 }
 
 .legend div {
@@ -186,7 +186,7 @@ body {
 }
 
 .section {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .section > h2 {
@@ -221,7 +221,7 @@ body {
     display: inline-block;
     text-align: left; /* Ensures the name text aligns to the left */
     flex-grow: 1; /* Allows it to take up remaining space */
-    width: 940px;
+    width:900px;
 }
 
 

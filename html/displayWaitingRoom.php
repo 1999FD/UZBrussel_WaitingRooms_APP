@@ -330,7 +330,7 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                         this.fetchXMLData();
                         this.changeLanguage();
                         this.setHeader();
-                    }, 100000); // 10 seconds
+                    }, 1000); // 10 seconds
                     setInterval(() => {
                         this.updateTime();
                     }, 30000);
