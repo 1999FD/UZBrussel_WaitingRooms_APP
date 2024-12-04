@@ -1,9 +1,1 @@
-<data>
-    <Waitingroom>
-        <Id>LAN1-KLIN</Id>
-        <NameNL>Wachtzaal Klinische Nutritie &amp; Diëtiek</NameNL>
-        <NameFR>Salle d'attente Nutrition Clinique et Diététique</NameFR>
-        <NameEN>Waiting room Clinical Nutrition &amp; Dietetics</NameEN>
-        <Services />
-    </Waitingroom>
-</data>
+<data><Waitingroom><Id>LAN1-KLIN</Id><NameNL>Wachtzaal Klinische Nutritie &amp; Diëtiek</NameNL><NameFR>Salle d'attente Nutrition Clinique et Diététique</NameFR><NameEN>Waiting room Clinical Nutrition &amp; Dietetics</NameEN><Services/></Waitingroom></data>

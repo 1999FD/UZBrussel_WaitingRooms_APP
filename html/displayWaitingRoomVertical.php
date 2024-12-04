@@ -43,7 +43,7 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                                 <img v-else src="../img/clock-red.png" alt="Red Icon" class="icon" />
                                 <span class="unit">
                                     <span class="id">{{service.Id}}-{{item.Id}}</span>
-                                    <span class="name">{{ trimText(item['Name' + currentLanguage]) }}</span>
+                                    <span class="name">{{ item['Name' + currentLanguage] }}</span>
                                 </span>
                             </div>
                         </template>
@@ -57,7 +57,7 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                                 <img v-else src="../img/clock-red.png" alt="Red Icon" class="icon" />
                                 <span class="unit">
                                     <span class="id">{{service.Id}}-{{unit.Id}}</span>
-                                    <span class="name">{{ trimText(unit['Name' + currentLanguage]) }}</span>
+                                    <span class="name">{{ unit['Name' + currentLanguage]}}</span>
                                 </span>
                             </div>
                         </template>

@@ -6,16 +6,38 @@
         <NameEN>Diabetes clinic</NameEN>
         <Services>
             <Service>
+                <Id>CVOT</Id>
+                <NameNL>Diabeteskliniek</NameNL>
+                <NameFR>Clinique du diabète</NameFR>
+                <NameEN>Diabetes centre</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>POID</Id>
+                        <NameNL>Podoloog Ines Debuyck</NameNL>
+                        <NameFR>Podoloog Ines Debuyck</NameFR>
+                        <NameEN>Podoloog Ines Debuyck</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>WZVA</Id>
+                        <NameNL>Voet/wondzorg Vaat - Dr. D. Aerden</NameNL>
+                        <NameFR>Voet/wondzorg Vaat - Dr. D. Aerden</NameFR>
+                        <NameEN>Voet/wondzorg Vaat - Dr. D. Aerden</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
                 <Id>CEND</Id>
                 <NameNL>Endocrinologie</NameNL>
                 <NameFR>Endocrinologie</NameFR>
                 <NameEN>Endrocrinology</NameEN>
                 <Units>
                     <Unit>
-                        <Id>BAL1</Id>
-                        <NameNL>Dr. Balti</NameNL>
-                        <NameFR>Dr. Balti</NameFR>
-                        <NameEN>Dr. Balti</NameEN>
+                        <Id>UNU1</Id>
+                        <NameNL>Prof. Unuane</NameNL>
+                        <NameFR>Prof. Unuane</NameFR>
+                        <NameEN>Prof. Unuane</NameEN>
                         <WaitTimeInMinutes>0</WaitTimeInMinutes>
                     </Unit>
                 </Units>
@@ -27,17 +49,38 @@
                 <NameEN>Diabetes centre</NameEN>
                 <Units>
                     <Unit>
-                        <Id>KAM3</Id>
-                        <NameNL>Diabeteseducator Glucose Controle Type 1 partiënten</NameNL>
-                        <NameFR>Dr. A. Kharagjitsing</NameFR>
-                        <NameEN>Dr. A. Kharagjitsing</NameEN>
+                        <Id>SEFR</Id>
+                        <NameNL>GROEPSESSIE opstart sensor - FR</NameNL>
+                        <NameFR> </NameFR>
+                        <NameEN> </NameEN>
                         <WaitTimeInMinutes>0</WaitTimeInMinutes>
                     </Unit>
                     <Unit>
-                        <Id>MAT2</Id>
-                        <NameNL>Ophaling materiaal Type 2</NameNL>
-                        <NameFR>Retrait de matériel Type 2</NameFR>
-                        <NameEN>Collection of material Type 2</NameEN>
+                        <Id>SEOP</Id>
+                        <NameNL>Opvolging na opstart sensor type 2</NameNL>
+                        <NameFR> </NameFR>
+                        <NameEN> </NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>VITD</Id>
+                        <NameNL>Opvolgconsultatie Vitamine D</NameNL>
+                        <NameFR>Consultation de suivi Vitamine D</NameFR>
+                        <NameEN>Consultation follow-up Vitamine D</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>CGM2</Id>
+                        <NameNL>Dr. C. Ghys</NameNL>
+                        <NameFR>Dr. C. Ghys</NameFR>
+                        <NameEN>Dr. C. Ghys</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>CGM1</Id>
+                        <NameNL>Dr. C. Ghys</NameNL>
+                        <NameFR>Dr. C. Ghys</NameFR>
+                        <NameEN>Dr. C. Ghys</NameEN>
                         <WaitTimeInMinutes>0</WaitTimeInMinutes>
                     </Unit>
                     <Unit>
@@ -55,17 +98,10 @@
                         <WaitTimeInMinutes>0</WaitTimeInMinutes>
                     </Unit>
                     <Unit>
-                        <Id>LIFE</Id>
-                        <NameNL>Consultatie Lifestyle - INDIVIDUEEL</NameNL>
-                        <NameFR>Consultatie Lifestyle</NameFR>
-                        <NameEN>Consultatie Lifestyle</NameEN>
-                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
-                    </Unit>
-                    <Unit>
-                        <Id>DIT2</Id>
-                        <NameNL>Diëtiste Glucose Controle</NameNL>
-                        <NameFR>Diëtiste</NameFR>
-                        <NameEN>Dietiste Glucose Controle</NameEN>
+                        <Id>CGM3</Id>
+                        <NameNL>Dr. C. Ghys</NameNL>
+                        <NameFR>Dr. C. Ghys</NameFR>
+                        <NameEN>Dr. C. Ghys</NameEN>
                         <WaitTimeInMinutes>0</WaitTimeInMinutes>
                     </Unit>
                     <Unit>
@@ -83,34 +119,6 @@
                         <WaitTimeInMinutes>0</WaitTimeInMinutes>
                     </Unit>
                     <Unit>
-                        <Id>AZ66</Id>
-                        <NameNL>Telefonische Opvolging Glycemiewaarden</NameNL>
-                        <NameFR>Controle téléphonique des valeurs glycémiques</NameFR>
-                        <NameEN>Telephone monitoring of glycemic values</NameEN>
-                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
-                    </Unit>
-                    <Unit>
-                        <Id>KAM2</Id>
-                        <NameNL>Dr. A. Kharagjitsing</NameNL>
-                        <NameFR>Dr. A. Kharagjitsing</NameFR>
-                        <NameEN>Dr. A. Kharagjitsing</NameEN>
-                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
-                    </Unit>
-                    <Unit>
-                        <Id>SOS1</Id>
-                        <NameNL> </NameNL>
-                        <NameFR> </NameFR>
-                        <NameEN> </NameEN>
-                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
-                    </Unit>
-                    <Unit>
-                        <Id>KAM1</Id>
-                        <NameNL>Dr. A. kharagjitsing</NameNL>
-                        <NameFR>Dr. A. kharagjitsing</NameFR>
-                        <NameEN>Dr. A. kharagjitsing</NameEN>
-                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
-                    </Unit>
-                    <Unit>
                         <Id>BKM1</Id>
                         <NameNL>Prof. Dr. B. Keymeulen</NameNL>
                         <NameFR>Prof. Dr. B. Keymeulen</NameFR>
@@ -118,10 +126,31 @@
                         <WaitTimeInMinutes>0</WaitTimeInMinutes>
                     </Unit>
                     <Unit>
-                        <Id>SOS2</Id>
-                        <NameNL> </NameNL>
-                        <NameFR> </NameFR>
-                        <NameEN> </NameEN>
+                        <Id>BKM2</Id>
+                        <NameNL>Prof. Dr. B. Keymeulen</NameNL>
+                        <NameFR>Prof. Dr. B. Keymeulen</NameFR>
+                        <NameEN>Prof. Dr. B. Keymeulen</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>BKM3</Id>
+                        <NameNL>Prof. Dr. B. Keymeulen</NameNL>
+                        <NameFR>Prof. Dr. B. Keymeulen</NameFR>
+                        <NameEN>Prof. Dr. B. Keymeulen</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>BKM4</Id>
+                        <NameNL>Prof. Dr. B. Keymeulen</NameNL>
+                        <NameFR>Prof. Dr. B. Keymeulen</NameFR>
+                        <NameEN>Prof. Dr. B. Keymeulen</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>PSCH</Id>
+                        <NameNL>Psycholoog Alex Jacques</NameNL>
+                        <NameFR>Psychologue Alex Jacques</NameFR>
+                        <NameEN>Psycholoog Alex Jacques</NameEN>
                         <WaitTimeInMinutes>0</WaitTimeInMinutes>
                     </Unit>
                 </Units>

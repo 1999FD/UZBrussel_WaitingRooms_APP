@@ -1,9 +1,1 @@
-<data>
-    <Waitingroom>
-        <Id>POL2-WZ06</Id>
-        <NameNL>Wachtzaal Geriatrie</NameNL>
-        <NameFR>Wachtzaal Geriatrie</NameFR>
-        <NameEN>Wachtzaal Geriatrie</NameEN>
-        <Services />
-    </Waitingroom>
-</data>
+<data><Waitingroom><Id>POL2-WZ06</Id><NameNL>Wachtzaal Geriatrie</NameNL><NameFR>Wachtzaal Geriatrie</NameFR><NameEN>Wachtzaal Geriatrie</NameEN><Services/></Waitingroom></data>

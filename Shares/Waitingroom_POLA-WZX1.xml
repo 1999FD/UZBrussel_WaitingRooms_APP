@@ -1,9 +1,1 @@
-<data>
-    <Waitingroom>
-        <Id>POLA-WZX1</Id>
-        <NameNL>Willebroek</NameNL>
-        <NameFR>Willebroek</NameFR>
-        <NameEN>Willebroek</NameEN>
-        <Services />
-    </Waitingroom>
-</data>
+<data><Waitingroom><Id>POLA-WZX1</Id><NameNL>Willebroek</NameNL><NameFR>Willebroek</NameFR><NameEN>Willebroek</NameEN><Services/></Waitingroom></data>

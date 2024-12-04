@@ -1,9 +1,1 @@
-<data>
-    <Waitingroom>
-        <Id>KAZK-WZ04</Id>
-        <NameNL>Wachtzaal COS</NameNL>
-        <NameFR>Wachtzaal COS</NameFR>
-        <NameEN>Wachtzaal COS</NameEN>
-        <Services />
-    </Waitingroom>
-</data>
+<data><Waitingroom><Id>KAZK-WZ04</Id><NameNL>Wachtzaal COS</NameNL><NameFR>Wachtzaal COS</NameFR><NameEN>Wachtzaal COS</NameEN><Services><Service><Id>KHEM</Id><NameNL>Hemato-immuno kinderen</NameNL><NameFR>Hemato-immuno  enfants</NameFR><NameEN>Hemato-immuno children</NameEN><Units><Unit><Id>BRAV</Id><NameNL>Dr. BRAVO SOPHIE</NameNL><NameFR>Dr. BRAVO SOPHIE</NameFR><NameEN> </NameEN><WaitTimeInMinutes>0</WaitTimeInMinutes></Unit></Units></Service></Services></Waitingroom></data>
