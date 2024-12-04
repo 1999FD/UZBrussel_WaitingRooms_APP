@@ -97,7 +97,7 @@ body {
 
 .content {
     width: 100%;
-    height: calc(100vh - 100px); /* Adjust based on header height */
+    height: calc(100vh - 200px); /* Adjust based on header height */
     display: flex;
 }
 
@@ -223,6 +223,29 @@ body {
     flex-grow: 1; /* Allows it to take up remaining space */
     width:900px;
 }
+
+.banner {
+    display: flex;
+    background-color: #f8f9fa; /* Light grey */
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    padding-left: 20px;
+    font-size: 2rem;
+    width: 100%;
+}
+
+.fa-info-circle {
+    font-size: 4rem; /* Slightly larger than text */
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the icon and the text */
+}
+
 
 
 

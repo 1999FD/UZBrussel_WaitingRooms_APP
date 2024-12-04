@@ -20,6 +20,34 @@
                     </Unit>
                     <Unit>
                         <Id>WZVA</Id>
+                        <NameNL>Voet/wondzorg Vaat - Dr. D. Aerden qsdffaa</NameNL>
+                        <NameFR>Voet/wondzorg Vaat - Dr. D. Aerden qsdffaa</NameFR>
+                        <NameEN>Voet/wondzorg Vaat - Dr. D. Aerden qsdffaa</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>WZVA1</Id>
+                        <NameNL>Voet/wondzorg Vaat - Dr. D. Aerden qsdf qsdf qsdf qsd fqsdf </NameNL>
+                        <NameFR>Voet/wondzorg Vaat - Dr. D. Aerden qsdf qsdf qsdf qsd fqsdf</NameFR>
+                        <NameEN>Voet/wondzorg Vaat - Dr. D. Aerden qsdf qsdf qsdf qsd fqsdf</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>WZVA2</Id>
+                        <NameNL>Voet/wondzorg Vaat - Dr. D. Aerden</NameNL>
+                        <NameFR>Voet/wondzorg Vaat - Dr. D. Aerden</NameFR>
+                        <NameEN>Voet/wondzorg Vaat - Dr. D. Aerden</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>WZVA3</Id>
+                        <NameNL>Voet/wondzorg Vaat - Dr. D. Aerden</NameNL>
+                        <NameFR>Voet/wondzorg Vaat - Dr. D. Aerden</NameFR>
+                        <NameEN>Voet/wondzorg Vaat - Dr. D. Aerden</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>WZVA4</Id>
                         <NameNL>Voet/wondzorg Vaat - Dr. D. Aerden</NameNL>
                         <NameFR>Voet/wondzorg Vaat - Dr. D. Aerden</NameFR>
                         <NameEN>Voet/wondzorg Vaat - Dr. D. Aerden</NameEN>

@@ -8,7 +8,7 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loketten UZBrussel</title>
+    <title>Wachtzalen UZBrussel</title>
     <script src="../js/config.js"></script>
     <script src="../js/vue.js"></script>
     <script src="../js/xml2json.js"></script>
@@ -82,6 +82,12 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                 </div>
             </div>
         </div>
+        <div class="banner" class="row">
+            <div class="info-container">
+                <i class="fas fa-info-circle" style="margin-right: 8px; color: #555;"></i>
+                <div v-html="currentBanner"></div>
+            </div>
+        </div>
     </div>
     <script src="../js/displayWaitingRoom.js"></script>
     <script>
@@ -99,14 +105,15 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                     selectedServices: [],
                     initialSelectedServices: [],
                     currentLanguage: 'NL',
-                    currentLabel: 'Loketten UZBrussel',
+                    currentLabel: 'Wachtzalen UZBrussel',
                     currentEstimatedWaitingTimeLabel: 'Geschatte wachttijd',
                     sectionArr: [],
                     currentPage: 1,
                     sectionIdx: 0,
                     previousSectionIdx: 0,
                     time: '',
-                    date: ''
+                    date: '',
+                    currentBanner: ''
                 };
             },
             methods: {
@@ -137,6 +144,16 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                     } else {
                         this.currentLabel = 'Waiting Times';
                         this.currentEstimatedWaitingTimeLabel = 'Estimated Waiting Time';
+                    }
+                },
+                setBanner() {
+                    // Set the banner based on the current language
+                    if (this.currentLanguage === 'NL') {
+                        this.currentBanner = 'Le temps d\'attente affiché est une indication. Selon les circonstances, il est possible que le temps d\'attente augmente. </br>Nous vous remercions de votre compréhension.';
+                    } else if (this.currentLanguage === 'FR') {
+                        this.currentBanner = 'De getoonde wachttijd is een indicatie. Afhankelijk van de omstandigheden kan de wachttijd toenemen. </br>Wij danken u voor uw begrip.';
+                    } else {
+                        this.currentBanner = 'The displayed waiting time is an indication. Depending on the circumstances, the waiting time may increase. </br>We thank you for your understanding.';
                     }
                 },
                 changeLanguage() {
@@ -230,7 +247,7 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                         let countedUnits = 0;
                         let sectionsToShow = 0;
                         let totalPages = 0; // Reset total pages before counting
-                        let unitsPerPage = 10; // Set the number of units per page
+                        let unitsPerPage = 9; // Set the number of units per page
                         this.services.forEach((service, idx) => {
                             let unitsInService = Array.isArray(service.Units.Unit) ? service.Units.Unit.length : 1;
                             unitsInService += 1; // Because we have to count the service header as well
@@ -244,7 +261,6 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                                 this.sectionArr.push(sectionsToShow);
                                 countedUnits = unitsInService;
                                 sectionsToShow = 1;
-
                             }
                         });
                         // Add an additional page for remaining units if needed
@@ -330,7 +346,8 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                         this.fetchXMLData();
                         this.changeLanguage();
                         this.setHeader();
-                    }, 1000); // 10 seconds
+                        this.setBanner();
+                    }, 10000); // 10 seconds
                     setInterval(() => {
                         this.updateTime();
                     }, 30000);
@@ -343,6 +360,7 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                 this.fetchWaitingRoomNamesAndSelectedServices();
                 this.fetchXMLData();
                 this.setHeader();
+                this.setBanner();
                 this.updateTime();
             },
             mounted() {

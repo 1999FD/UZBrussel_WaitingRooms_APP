@@ -8,7 +8,7 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loketten UZBrussel</title>
+    <title>Wachtzalen UZBrussel</title>
     <script src="../js/config.js"></script>
     <script src="../js/vue.js"></script>
     <script src="../js/xml2json.js"></script>
@@ -102,7 +102,7 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                     selectedServices: [],
                     initialSelectedServices: [],
                     currentLanguage: 'NL',
-                    currentLabel: 'Loketten UZBrussel',
+                    currentLabel: 'Wachtzalen UZBrussel',
                     currentEstimatedWaitingTimeLabel: 'Geschatte wachttijd',
                     sectionArr: [],
                     currentPage: 1,
