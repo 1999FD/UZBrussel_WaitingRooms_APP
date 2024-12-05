@@ -148,9 +148,9 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                 },
                 setBanner() {
                     // Set the banner based on the current language
-                    if (this.currentLanguage === 'NL') {
+                    if (this.currentLanguage === 'FR') {
                         this.currentBanner = 'Le temps d\'attente affiché est une indication. Selon les circonstances, il est possible que le temps d\'attente augmente. </br>Nous vous remercions de votre compréhension.';
-                    } else if (this.currentLanguage === 'FR') {
+                    } else if (this.currentLanguage === 'NL') {
                         this.currentBanner = 'De getoonde wachttijd is een indicatie. Afhankelijk van de omstandigheden kan de wachttijd toenemen. </br>Wij danken u voor uw begrip.';
                     } else {
                         this.currentBanner = 'The displayed waiting time is an indication. Depending on the circumstances, the waiting time may increase. </br>We thank you for your understanding.';
