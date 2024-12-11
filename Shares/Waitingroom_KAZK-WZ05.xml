@@ -1,1 +1,9 @@
-<data><Waitingroom><Id>KAZK-WZ05</Id><NameNL>Kindergastro niv. -1</NameNL><NameFR>Kindergastro niv. -1</NameFR><NameEN>Kindergastro niv. -1</NameEN><Services/></Waitingroom></data>
+<data>
+    <Waitingroom>
+        <Id>KAZK-WZ05</Id>
+        <NameNL>Kindergastro niv. -1</NameNL>
+        <NameFR>Kindergastro niv. -1</NameFR>
+        <NameEN>Kindergastro niv. -1</NameEN>
+        <Services/>
+    </Waitingroom>
+</data>

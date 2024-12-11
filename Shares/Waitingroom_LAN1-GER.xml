@@ -1,1 +1,89 @@
-<data><Waitingroom><Id>LAN1-GER</Id><NameNL>Wachtzaal Geriatrie</NameNL><NameFR>Salle d'attente gériatrie</NameFR><NameEN>Geriatrics waiting room</NameEN><Services><Service><Id>CGER</Id><NameNL>Geriatrie</NameNL><NameFR>Gériatrie</NameFR><NameEN>Geriatrics</NameEN><Units><Unit><Id>DIET</Id><NameNL>Diëtiste</NameNL><NameFR>Diététicien</NameFR><NameEN>Dietician</NameEN><WaitTimeInMinutes>0</WaitTimeInMinutes></Unit><Unit><Id>LIET</Id><NameNL>CONSULTATIE DR. LIETEN</NameNL><NameFR>CONSULTATION DR. LIETEN</NameFR><NameEN>CONSULTATION DR. LIETEN</NameEN><WaitTimeInMinutes>0</WaitTimeInMinutes></Unit><Unit><Id>EGER</Id><NameNL>Ergotherapeut</NameNL><NameFR> </NameFR><NameEN> </NameEN><WaitTimeInMinutes>0</WaitTimeInMinutes></Unit><Unit><Id>GVPK</Id><NameNL>Verpleegkundige Geriatrie</NameNL><NameFR> </NameFR><NameEN> </NameEN><WaitTimeInMinutes>0</WaitTimeInMinutes></Unit><Unit><Id>ASO</Id><NameNL>Consultatie ASO Geriatrie</NameNL><NameFR>Consultation ASO Geriatrie</NameFR><NameEN>Consultation ASO Geriatrics</NameEN><WaitTimeInMinutes>0</WaitTimeInMinutes></Unit><Unit><Id>GHPS</Id><NameNL>Geheugenkliniek - psycholoog</NameNL><NameFR>Geheugenkliniek - psycholoog</NameFR><NameEN>Geheugenkliniek - psycholoog</NameEN><WaitTimeInMinutes>0</WaitTimeInMinutes></Unit><Unit><Id>GPME</Id><NameNL>Raadpleging geriatrische psychologie</NameNL><NameFR>Consultation psychologie gériatrie</NameFR><NameEN>Geriatric consultation psychology</NameEN><WaitTimeInMinutes>0</WaitTimeInMinutes></Unit></Units></Service></Services></Waitingroom></data>
+<data>
+    <Waitingroom>
+        <Id>LAN1-GER</Id>
+        <NameNL>Wachtzaal Geriatrie</NameNL>
+        <NameFR>Salle d'attente gériatrie</NameFR>
+        <NameEN>Geriatrics waiting room</NameEN>
+        <Services>
+            <Service>
+                <Id>KEND</Id>
+                <NameNL>Endocrinologie kinderen</NameNL>
+                <NameFR>Endocrinologie enfants</NameFR>
+                <NameEN>Endocrinology children</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>STUD</Id>
+                        <NameNL>study nurses</NameNL>
+                        <NameFR>study nurses</NameFR>
+                        <NameEN>study nurses</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>CGER</Id>
+                <NameNL>Geriatrie</NameNL>
+                <NameFR>Gériatrie</NameFR>
+                <NameEN>Geriatrics</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>DIET</Id>
+                        <NameNL>Diëtiste</NameNL>
+                        <NameFR>Diététicien</NameFR>
+                        <NameEN>Dietician</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>DIET2</Id>
+                        <NameNL>Diëtiste</NameNL>
+                        <NameFR>Diététicien</NameFR>
+                        <NameEN>Dietician</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>LIET</Id>
+                        <NameNL>CONSULTATIE DR. LIETEN</NameNL>
+                        <NameFR>CONSULTATION DR. LIETEN</NameFR>
+                        <NameEN>CONSULTATION DR. LIETEN</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>EGER</Id>
+                        <NameNL>Ergotherapeut</NameNL>
+                        <NameFR></NameFR>
+                        <NameEN></NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>GVPK</Id>
+                        <NameNL>Verpleegkundige Geriatrie</NameNL>
+                        <NameFR></NameFR>
+                        <NameEN></NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>ASO</Id>
+                        <NameNL>Consultatie ASO Geriatrie</NameNL>
+                        <NameFR>Consultation ASO Geriatrie</NameFR>
+                        <NameEN>Consultation ASO Geriatrics</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>GHPS</Id>
+                        <NameNL>Geheugenkliniek - psycholoog</NameNL>
+                        <NameFR>Geheugenkliniek - psycholoog</NameFR>
+                        <NameEN>Geheugenkliniek - psycholoog</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>GPME</Id>
+                        <NameNL>Raadpleging geriatrische psychologie</NameNL>
+                        <NameFR>Consultation psychologie gériatrie</NameFR>
+                        <NameEN>Geriatric consultation psychology</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+        </Services>
+    </Waitingroom>
+</data>

@@ -301,6 +301,42 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                             }
                         })
 
+                        var unitIds = [];
+                        var newUnitIds = [];
+
+                        this.services.forEach((service, serviceIndex) => {
+                            if (Array.isArray(service.Units.Unit)) {
+                                service.Units.Unit.forEach((unit, unitIndex) => {
+                                    unitIds.push(unit.Id);
+                                });
+                            } else {
+                                unitIds.push(service.Units.Unit.Id);
+                            }
+                        });
+
+                        newServices.forEach((service, serviceIndex) => {
+                            if (Array.isArray(service.Units.Unit)) {
+                                service.Units.Unit.forEach((unit, unitIndex) => {
+                                    newUnitIds.push(unit.Id);
+                                });
+                            } else {
+                                newUnitIds.push(service.Units.Unit.Id);
+                            }
+                        });
+
+                        // Check if selected services have changed from initial selected services and reload page if they have
+                        unitIds.forEach(i => {
+                            if (!newUnitIds.includes(i)) {
+                                location.reload();
+                            }
+                        })
+                        newUnitIds.forEach(i => {
+                            if (!unitIds.includes(i)) {
+                                location.reload();
+                            }
+                        })
+
+
                         // Update WaitTimeInMinutes in selectedServices based on newSelectedServices
                         this.services.forEach((existingService, serviceIndex) => {
                             const newService = newServices.find(service => service.Id === existingService.Id);
@@ -347,7 +383,7 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                         this.changeLanguage();
                         this.setHeader();
                         this.setBanner();
-                    }, 10000); // 10 seconds
+                    }, 1000); // 10 seconds
                     setInterval(() => {
                         this.updateTime();
                     }, 30000);

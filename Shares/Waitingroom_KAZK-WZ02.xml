@@ -1,1 +1,128 @@
-<data><Waitingroom><Id>KAZK-WZ02</Id><NameNL>Kidz Health Castle</NameNL><NameFR>Kidz Health Castle</NameFR><NameEN>Kidz Health Castle</NameEN><Services><Service><Id>KOFT</Id><NameNL>Oftalmologie kinderen</NameNL><NameFR>Ophtalmologie enfants</NameFR><NameEN>Ophtalmology children</NameEN><Units><Unit><Id>RAAN</Id><NameNL>Dr. Anaïs Ramaekers</NameNL><NameFR>Dr. Anaïs Ramaekers</NameFR><NameEN> Dr. Anaïs Ramaekers</NameEN><WaitTimeInMinutes>0</WaitTimeInMinutes></Unit></Units></Service><Service><Id>KCAR</Id><NameNL>Cardiologie kinderen</NameNL><NameFR>Cardiologie enfants</NameFR><NameEN>Cardiology children</NameEN><Units><Unit><Id>DECR</Id><NameNL>Dr. Tine Decraene</NameNL><NameFR>Dr. Tine Decraene</NameFR><NameEN>Dr. Tine Decraene</NameEN><WaitTimeInMinutes>0</WaitTimeInMinutes></Unit></Units></Service><Service><Id>KKNO</Id><NameNL>KNO kinderen</NameNL><NameFR>O.R.L. enfants</NameFR><NameEN>E.N.T. children</NameEN><Units><Unit><Id>BAHE</Id><NameNL>Dr. Hermine Baelen</NameNL><NameFR>Dr. Hermine Baelen</NameFR><NameEN>Dr. Hermine Baelen</NameEN><WaitTimeInMinutes>2</WaitTimeInMinutes></Unit><Unit><Id>DESA</Id><NameNL>Dr. A. Destryker</NameNL><NameFR>Dr. A. Destryker</NameFR><NameEN>Dr. A. Destryker</NameEN><WaitTimeInMinutes>0</WaitTimeInMinutes></Unit></Units></Service><Service><Id>KGAS</Id><NameNL>Gastro-enterologie kinderen</NameNL><NameFR>Gastro-entérologie enfants</NameFR><NameEN>Gastroenterology children</NameEN><Units><Unit><Id>HAUS</Id><NameNL>Prof. Dr. B. Hauser</NameNL><NameFR>Prof. Dr. B. Hauser</NameFR><NameEN>Prof. Dr. B. Hauser</NameEN><WaitTimeInMinutes>9</WaitTimeInMinutes></Unit><Unit><Id>FELL</Id><NameNL>FELLOW/Gastro- Enterologie</NameNL><NameFR>FELLOW/Gastro- Enterologie</NameFR><NameEN>FELLOW/Gastro- Enterologie</NameEN><WaitTimeInMinutes>0</WaitTimeInMinutes></Unit><Unit><Id>DGEL</Id><NameNL>Prof. Dr. E. De Greef</NameNL><NameFR>Prof. Dr. E. De Greef</NameFR><NameEN>Prof. Dr. E. De Greef</NameEN><WaitTimeInMinutes>24</WaitTimeInMinutes></Unit><Unit><Id>NELE</Id><NameNL>Nele De Mulder-diëtiste</NameNL><NameFR>Nele De Mulder-diététicienne</NameFR><NameEN>Nele De Mulder-dietician</NameEN><WaitTimeInMinutes>0</WaitTimeInMinutes></Unit></Units></Service><Service><Id>KEND</Id><NameNL>Endocrinologie kinderen</NameNL><NameFR>Endocrinologie enfants</NameFR><NameEN>Endocrinology children</NameEN><Units><Unit><Id>STUD</Id><NameNL>study nurses</NameNL><NameFR>study nurses</NameFR><NameEN>study nurses</NameEN><WaitTimeInMinutes>0</WaitTimeInMinutes></Unit></Units></Service><Service><Id>KBLO</Id><NameNL>Bloedafname KZ</NameNL><NameFR>Prise de sang KZ</NameFR><NameEN>Blood Test KZ</NameEN><Units><Unit><Id>BLOE</Id><NameNL> Bloedafname</NameNL><NameFR> Prise de sang</NameFR><NameEN> Blood examination</NameEN><WaitTimeInMinutes>0</WaitTimeInMinutes></Unit></Units></Service></Services></Waitingroom></data>
+<data>
+    <Waitingroom>
+        <Id>KAZK-WZ02</Id>
+        <NameNL>Kidz Health Castle</NameNL>
+        <NameFR>Kidz Health Castle</NameFR>
+        <NameEN>Kidz Health Castle</NameEN>
+        <Services>
+            <Service>
+                <Id>KOFT</Id>
+                <NameNL>Oftalmologie kinderen</NameNL>
+                <NameFR>Ophtalmologie enfants</NameFR>
+                <NameEN>Ophtalmology children</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>RAAN</Id>
+                        <NameNL>Dr. Anaïs Ramaekers</NameNL>
+                        <NameFR>Dr. Anaïs Ramaekers</NameFR>
+                        <NameEN> Dr. Anaïs Ramaekers</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>KCAR</Id>
+                <NameNL>Cardiologie kinderen</NameNL>
+                <NameFR>Cardiologie enfants</NameFR>
+                <NameEN>Cardiology children</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>DECR</Id>
+                        <NameNL>Dr. Tine Decraene</NameNL>
+                        <NameFR>Dr. Tine Decraene</NameFR>
+                        <NameEN>Dr. Tine Decraene</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>KKNO</Id>
+                <NameNL>KNO kinderen</NameNL>
+                <NameFR>O.R.L. enfants</NameFR>
+                <NameEN>E.N.T. children</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>BAHE</Id>
+                        <NameNL>Dr. Hermine Baelen</NameNL>
+                        <NameFR>Dr. Hermine Baelen</NameFR>
+                        <NameEN>Dr. Hermine Baelen</NameEN>
+                        <WaitTimeInMinutes>2</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>DESA</Id>
+                        <NameNL>Dr. A. Destryker</NameNL>
+                        <NameFR>Dr. A. Destryker</NameFR>
+                        <NameEN>Dr. A. Destryker</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>KGAS</Id>
+                <NameNL>Gastro-enterologie kinderen</NameNL>
+                <NameFR>Gastro-entérologie enfants</NameFR>
+                <NameEN>Gastroenterology children</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>HAUS</Id>
+                        <NameNL>Prof. Dr. B. Hauser</NameNL>
+                        <NameFR>Prof. Dr. B. Hauser</NameFR>
+                        <NameEN>Prof. Dr. B. Hauser</NameEN>
+                        <WaitTimeInMinutes>9</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>FELL</Id>
+                        <NameNL>FELLOW/Gastro- Enterologie</NameNL>
+                        <NameFR>FELLOW/Gastro- Enterologie</NameFR>
+                        <NameEN>FELLOW/Gastro- Enterologie</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>DGEL</Id>
+                        <NameNL>Prof. Dr. E. De Greef</NameNL>
+                        <NameFR>Prof. Dr. E. De Greef</NameFR>
+                        <NameEN>Prof. Dr. E. De Greef</NameEN>
+                        <WaitTimeInMinutes>24</WaitTimeInMinutes>
+                    </Unit>
+                    <Unit>
+                        <Id>NELE</Id>
+                        <NameNL>Nele De Mulder-diëtiste</NameNL>
+                        <NameFR>Nele De Mulder-diététicienne</NameFR>
+                        <NameEN>Nele De Mulder-dietician</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>KEND</Id>
+                <NameNL>Endocrinologie kinderen</NameNL>
+                <NameFR>Endocrinologie enfants</NameFR>
+                <NameEN>Endocrinology children</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>STUD</Id>
+                        <NameNL>study nurses</NameNL>
+                        <NameFR>study nurses</NameFR>
+                        <NameEN>study nurses</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+            <Service>
+                <Id>KBLO</Id>
+                <NameNL>Bloedafname KZ</NameNL>
+                <NameFR>Prise de sang KZ</NameFR>
+                <NameEN>Blood Test KZ</NameEN>
+                <Units>
+                    <Unit>
+                        <Id>BLOE</Id>
+                        <NameNL> Bloedafname</NameNL>
+                        <NameFR> Prise de sang</NameFR>
+                        <NameEN> Blood examination</NameEN>
+                        <WaitTimeInMinutes>0</WaitTimeInMinutes>
+                    </Unit>
+                </Units>
+            </Service>
+        </Services>
+    </Waitingroom>
+</data>
