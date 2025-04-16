@@ -13,15 +13,21 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
     <script src="../js/vue.js"></script>
     <script src="../js/xml2json.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        [v-cloak] {
+            display: none !important;
+            background-color: black !important;
+        }
+    </style>
 </head>
-
 <body>
     <audio id="notificationSound" src="../media/Noti.mp3"></audio>
     <!-- Green vertical bar -->
     <div class="green-bar"></div>
+    <div id="preloader" style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:black;z-index:9999;"></div>
     <!-- Content of the page -->
     <div id="app" class="content-container">
-        <div class="header" class="row">
+         <div class="header" class="row">
             <div class="label">{{ currentLabel }}</div>
             <!-- Page number -->
             <div class="page-number" v-if="sectionArr.length > 0">{{currentPage}}/{{sectionArr.length}}</div>
@@ -113,7 +119,8 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                     previousSectionIdx: 0,
                     time: '',
                     date: '',
-                    currentBanner: ''
+                    currentBanner: '',
+                    loaded: false
                 };
             },
             methods: {
@@ -383,7 +390,7 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                         this.changeLanguage();
                         this.setHeader();
                         this.setBanner();
-                    }, 1000); // 10 seconds
+                    }, 10000); // 10 seconds
                     setInterval(() => {
                         this.updateTime();
                     }, 30000);
@@ -398,6 +405,10 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
                 this.setHeader();
                 this.setBanner();
                 this.updateTime();
+                setTimeout(() => {
+                    this.loaded = true;
+                    document.getElementById('preloader').style.display = 'none';
+                }, 100);
             },
             mounted() {
                 this.updateDataPeriodically();

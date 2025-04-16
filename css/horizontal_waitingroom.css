@@ -237,7 +237,7 @@ body {
 }
 
 .fa-info-circle {
-    font-size: 4rem; /* Slightly larger than text */
+    font-size: 3.5rem; /* Slightly larger than text */
 }
 
 .info-container {
@@ -245,6 +245,11 @@ body {
     align-items: center;
     gap: 10px; /* Space between the icon and the text */
 }
+
+[v-cloak] {
+    display: none;
+}
+
 
 
 
